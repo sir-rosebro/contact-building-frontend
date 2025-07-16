@@ -1,0 +1,47 @@
+{
+    "subTitle": "WHAT WE DO",
+    "title1": "High Quality Services Of ",
+    "title2": "Multiple Industries",
+    "serviceData": [
+        {
+            "id": 1,
+            "animation": "animate__animated animate__slideInUp",
+            "iconThumb": "service-style1.png",
+            "title": "Painting",
+            "text": "Services related to financial record-keeping, bookkeeping, tax preparation.",
+            "thumb": "service4.png",
+            "icon": "bi bi-arrow-right",
+            "serviceSpace": ""
+        },
+        {
+            "id": 2,
+            "animation": "animate__animated animate__slideInUp",
+            "iconThumb": "service-style2.png",
+            "title": "Water Proofing",
+            "text": "Services related to financial record-keeping, bookkeeping, tax preparation.",
+            "thumb": "service5.png",
+            "icon": "bi bi-arrow-right",
+            "serviceSpace": ""
+        },
+        {
+            "id": 3,
+            "animation": "animate__animated animate__slideInUp",
+            "iconThumb": "service-style3.png",
+            "title": "Kitchen and Bathroom Renovation",
+            "text": "Services related to financial record-keeping, bookkeeping, tax preparation.",
+            "thumb": "service6.png",
+            "icon": "bi bi-arrow-right",
+            "serviceSpace": ""
+        },
+        {
+            "id": 4,
+            "animation": "animate__animated animate__slideInUp",
+            "iconThumb": "service-style4.png",
+            "title": "General Fixes",
+            "text": "Services related to financial record-keeping, bookkeeping, tax preparation.",
+            "thumb": "service7.png",
+            "icon": "bi bi-arrow-right",
+            "serviceSpace": ""
+        }
+    ]
+}

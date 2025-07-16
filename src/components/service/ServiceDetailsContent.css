@@ -1,0 +1,186 @@
+
+  
+    .sidebar-contact-widget {
+      position: sticky;
+      top: 10px;
+      background: #fff9f2;
+      padding: 1.5rem;
+      /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); */
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .sidebar-contact-widget .telephone-span {
+        background-color: #fd6601;
+        padding: 1.5rem;
+    }
+
+    .sidebar-contact-widget .telephone-span i {
+        font-size: 3rem;
+    }
+
+    .service-details-area {
+        padding: 60px 0;
+        background: #f8f9fa;
+      }
+      
+      .service-details-single-box {
+        /* background: #fff; */
+        border-radius: 10px;
+        padding-block: 1rem;
+      }
+      
+      .service-details-thumb {
+        overflow: hidden;
+        border-radius: 8px;
+      }
+/*       
+      .service-details-content {
+        padding: 20px 0;
+      } */
+      
+      .main-heading {
+        font-size: 2.25rem; /* Smaller than typical H1, balanced for elegance */
+        font-weight: 700;
+        color: #747474;
+        margin-bottom: 20px;
+        line-height: 1.3;
+      }
+      
+      .section-heading {
+        font-size: 1.75rem; /* Smaller H2 for hierarchy */
+        font-weight: 600;
+        color: #747474;
+        margin-bottom: 15px;
+      }
+      
+      .faq-heading {
+        font-size: 1.25rem; /* Balanced H3 for FAQs */
+        font-weight: 500;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      
+      .service-list li {
+        font-size: 1.1rem;
+        color: #333;
+        display: flex;
+        align-items: center;
+      }
+      
+      .stats-section {
+        /* background: #f1f1f1; */
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+      
+      .stat-item {
+        padding: 15px;
+      }
+      
+      .stat-item:nth-of-type(2) {
+        border-inline: 3px dotted #f60;
+      }
+
+      /* p > strong {
+        color: #f60;
+      } */
+
+      .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #F60;
+        margin-bottom: 10px;
+      }
+      
+      .stat-item p {
+        font-size: 1rem;
+        color: #555;
+        margin: 0;
+      }
+
+      .achivement {
+        background: #f2f3f7;
+        border-radius: 1.5rem;
+        text-align: center;
+      }
+      
+      /* .sidebar-contact-widget {
+        background: #fff;
+        border-radius: 10px;
+        padding: 25px;
+        text-align: center;
+        margin-top: 30px;
+      } */
+/*       
+      .sidebar-contact-widget h5 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 20px;
+      } */
+      
+      .telephone-span {
+        /* width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #F60, #ff8c00);
+        margin: 0 auto 15px; */
+      }
+/*       
+      .sidebar-contact-widget .fs-1 {
+        font-size: 2rem !important;
+        color: #333;
+        margin-bottom: 10px;
+      } */
+      
+      /* .sidebar-contact-widget .fs-5 {
+        font-size: 1rem !important;
+        color: #555;
+      } */
+      
+      .cta-button {
+        display: inline-block;
+        background: linear-gradient(135deg, #F60, #ff8c00);
+        color: #fff;
+        padding: 12px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 500;
+        margin-top: 15px;
+      }
+      
+      .cta-button:hover {
+        transform: translateY(-2px);
+      }
+      
+      @media (max-width: 768px) {
+        .main-heading {
+          font-size: 1.75rem;
+        }
+      
+        .section-heading {
+          font-size: 1.5rem;
+        }
+      
+        .faq-heading {
+          font-size: 1.1rem;
+        }
+/*       
+        .service-details-single-box {
+          padding: 20px;
+        }
+       */
+        .stat-number {
+          font-size: 2rem;
+        }
+      
+        /* .sidebar-contact-widget .fs-1 {
+          font-size: 1.75rem !important;
+        }*/
+      } 
+  

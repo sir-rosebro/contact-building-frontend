@@ -1,0 +1,35 @@
+{
+    "title": "Our Services",
+    "serviceData": [
+        {
+            "id": 1,
+            "serviceText": "Bathroom & Kitchen Renovation",
+            "icon": "bi bi-chevron-double-right",
+            "link": ""
+        },
+        {
+            "id": 2,
+            "serviceText": "Waterproofing",
+            "icon": "bi bi-chevron-double-right",
+            "link": ""
+        },
+        {
+            "id": 3,
+            "serviceText": "Painting",
+            "icon": "bi bi-chevron-double-right",
+            "link": ""
+        },
+        {
+            "id": 4,
+            "serviceText": "General Fixes",
+            "icon": "bi bi-chevron-double-right",
+            "link": ""
+        },
+        {
+            "id": 5,
+            "serviceText": "Tiling",
+            "icon": "bi bi-chevron-double-right",
+            "link": ""
+        }
+    ]
+}

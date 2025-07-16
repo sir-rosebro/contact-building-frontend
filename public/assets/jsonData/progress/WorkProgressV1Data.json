@@ -1,0 +1,31 @@
+{
+    "subTitle": "Working Proces",
+    "title1": "Check How We Work in",
+    "title2": "Easy Steps",
+    "progressData": [
+        {
+            "id": 1,
+            "thumb": "work1.png",
+            "number": "01",
+            "title": "Book online",
+            "text": "Choose your appropriate date and time as well as required service",
+            "linkText": "Book an Appointment"
+        },
+        {
+            "id": 2,
+            "thumb": "work2.png",
+            "number": "02",
+            "title": "On-Site Visit for Service",
+            "text": "Our team member will visit your site to assess the work and ensure everything is ready for a smooth service.",
+            "linkText": "View Services"
+        },
+        {
+            "id": 3,
+            "thumb": "work3.png",
+            "number": "03",
+            "title": "Get the Job Done",
+            "text": "Count on our experienced handymen to complete the task with care and professionalism.",
+            "linkText": "View Completed Jobs"
+        }
+    ]
+}

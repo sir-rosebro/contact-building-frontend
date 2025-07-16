@@ -1,0 +1,208 @@
+.trapezium {
+    background-color: #F60; /* Dark orange */
+    color: white;
+    padding: 3rem;
+    clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+    margin-bottom: 2rem;
+    width: 110%;
+  }
+  
+  .trapezium p,
+  .trapezium h2 {
+    color: white;
+    margin-bottom: 1rem;
+    max-width: 600px;
+  }
+
+  .backgroundOverlay {
+    position: absolute;
+    inset: 0;
+    background:linear-gradient(to bottom right, rgb(39 32 26 / 80%), rgb(223 87 8 / 46%)), url(/assets/images/overlay-painting.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  
+  .aboutUs {
+    position: relative;
+    background: linear-gradient(to bottom right, #fff8f2, #ed4e0a);
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .imageCollage {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  
+  .collageImage {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    position: absolute;
+  }
+  
+  .image1 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .image2 {
+    top: 325px;
+    left: 75%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .image3 {
+    top: 325px;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hammerBackground {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    opacity: 1; /* Debugging, revert to 0.08 */
+    z-index: -1;
+    pointer-events: none;
+    overflow: visible;
+  }
+  
+  .backgroundSvg {
+    position: absolute;
+    width: 120px; /* Increased for larger circles */
+    height: 120px;
+    object-fit: contain;
+    animation: floatHammer 6s ease-in-out infinite;
+  }
+  
+  /* Scatter positions */
+  .hammer {
+    top: -60px; /* Adjusted for larger size */
+    left: 0;
+    animation-delay: 0s;
+  }
+  
+  .droplet {
+    top: 60px;
+    left: 120px;
+    animation-delay: 2s;
+  }
+  
+  .paintbrush {
+    top: 0;
+    left: -120px;
+    animation-delay: 4s;
+  }
+  
+  @keyframes floatHammer {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(15px) rotate(3deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+  }
+  
+  .aboutUs::before,
+  .aboutUs::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.05;
+    z-index: -2;
+    filter: blur(60px);
+    transform: rotate(15deg);
+  }
+  
+  .aboutUs::before {
+    width: 450px;
+    height: 450px;
+    background-color: #ff7a00;
+    top: -120px;
+    left: -100px;
+  }
+  
+  .aboutUs::after {
+    width: 350px;
+    height: 350px;
+    background-color: #ff9b33;
+    bottom: -80px;
+    right: -120px;
+  }
+  
+  @media (max-width: 768px) {
+    .imageCollage {
+      width: 420px;
+      height: 500px;
+    }
+  
+    .collageImage {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .image1 {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .image2 {
+      top: 180px;
+      left: 75%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .image3 {
+      top: 360px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .hammerBackground {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .backgroundSvg {
+      width: 90px; /* Adjusted for mobile */
+      height: 90px;
+    }
+  
+    .hammer {
+      top: -45px;
+      left: 0;
+    }
+  
+    .droplet {
+      top: 45px;
+      left: 90px;
+    }
+  
+    .paintbrush {
+      top: 0;
+      left: -90px;
+    }
+  
+    .aboutUs::before,
+    .aboutUs::after {
+      transform: scale(0.7);
+    }
+  }
+
+ 

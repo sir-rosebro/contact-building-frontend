@@ -1,0 +1,28 @@
+/* styles/Services.module.css */
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .testimonial {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    color: #2c3e50;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }

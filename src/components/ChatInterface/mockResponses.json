@@ -1,0 +1,18 @@
+[
+    {
+      "userInput": "hi",
+      "botResponse": "Hello! I'm your handy bot, ready to assist!"
+    },
+    {
+      "userInput": "help",
+      "botResponse": "What do you need help with? I'm here for you!"
+    },
+    {
+      "userInput": "what can you do",
+      "botResponse": "I can answer questions, provide tips, or just chat! Try asking anything."
+    },
+    {
+      "userInput": "default",
+      "botResponse": "Hmm, not sure about that one. Try saying 'hi', 'help', or 'what can you do'!"
+    }
+  ]

@@ -1,0 +1,61 @@
+/* styles/Services.module.css */
+.hero {
+    background: linear-gradient(180deg, #1a3c6d, #2c5282);
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .cardHover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cardHover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .testimonial {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4 {
+    color: #1a3c6d;
+    font-weight: 700;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+    color: #f8f9fa;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  .form {
+    background: #f8f9fa;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .btn-primary {
+    background-color: #1a3c6d;
+    border-color: #1a3c6d;
+  }
+  
+  .btn-primary:hover {
+    background-color: #153057;
+    border-color: #153057;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #f8f9fa;
+    color: #1a3c6d;
+  }

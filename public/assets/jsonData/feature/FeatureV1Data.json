@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "activeClass": "active",
+        "featureNumber": "two",
+        "thumb": "feature1.png",
+        "titleFirst": "15+",
+        "titleLast": "Years of Service",
+        "icon": "bi bi-arrow-up-right"
+    },
+    {
+        "id": 2,
+        "activeClass": "active",
+        "featureNumber": "two",
+        "thumb": "feature2.png",
+        "titleFirst": "900",
+        "titleLast": "Project Done",
+        "icon": "bi bi-arrow-up-right"
+    },
+    {
+        "id": 3,
+        "activeClass": "active",
+        "featureNumber": "two",
+        "thumb": "feature3.png",
+        "titleFirst": "150+",
+        "titleLast": "Happy Clients",
+        "icon": "bi bi-arrow-up-right"
+    },
+    {
+        "id": 4,
+        "activeClass": "active",
+        "featureNumber": "two",
+        "thumb": "feature3.png",
+        "image": "https://handyman-7bi.pages.dev/assets/images/sydney.png",
+        "titleFirst": "",
+        "titleLast": "Sydney Based",
+        "icon": "bi bi-arrow-up-right"
+    }
+]
