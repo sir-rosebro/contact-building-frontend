@@ -180,7 +180,7 @@ export default function WaterproofingHero() {
                 <h2>Vision and Mission</h2>
               </div>
               <p className='text-highlight'>
-              <span>"Contact Building Services"</span> is your expert handyman mate, forever committed to supporting our customers and communities in crafting exceptional 
+              <span>Contact Building Services</span> is your expert handyman mate, forever committed to supporting our customers and communities in crafting exceptional 
               homes.
               </p>
               <p className="card-text">

@@ -335,27 +335,27 @@ const Contact = () => {
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <p className={styles.testimonial}>
-                    "Hills Waterproofing saved our Sydney CBD apartment from bathroom leaks. Professional and fast!" – Sarah T., Sydney CBD
+                    Hills Waterproofing saved our Sydney CBD apartment from bathroom leaks. Professional and fast! – Sarah T., Sydney CBD
                   </p>
                 </div>
                 <div className="carousel-item">
                   <p className={styles.testimonial}>
-                    "Their balcony waterproofing in Pyrmont was flawless. Saved our strata property!" – John M., Pyrmont
+                    Their balcony waterproofing in Pyrmont was flawless. Saved our strata property! – John M., Pyrmont
                   </p>
                 </div>
                 <div className="carousel-item">
                   <p className={styles.testimonial}>
-                    "Expert roof waterproofing in Surry Hills. Highly recommend!" – Emma R., Surry Hills
+                    Expert roof waterproofing in Surry Hills. Highly recommend! – Emma R., Surry Hills
                   </p>
                 </div>
                 <div className="carousel-item">
                   <p className={styles.testimonial}>
-                    "Our basement in Chippendale is now dry thanks to Hills Waterproofing!" – Michael L., Chippendale
+                    Our basement in Chippendale is now dry thanks to Hills Waterproofing! – Michael L., Chippendale
                   </p>
                 </div>
                 <div className="carousel-item">
                   <p className={styles.testimonial}>
-                    "Top-notch commercial waterproofing in Randwick. Great service!" – Lisa K., Randwick
+                    Top-notch commercial waterproofing in Randwick. Great service! – Lisa K., Randwick
                   </p>
                 </div>
               </div>

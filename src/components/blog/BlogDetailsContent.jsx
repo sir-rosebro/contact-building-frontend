@@ -107,14 +107,14 @@ const BlogDetailsContent = async ({ blogInfo }) => {
           >
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img
+                <Image
                   src="https://via.placeholder.com/800x400"
                   className="d-block w-100 rounded"
                   alt="Slider placeholder 1"
                 />
               </div>
               <div className="carousel-item">
-                <img
+                <Image
                   src="https://via.placeholder.com/800x400/333"
                   className="d-block w-100 rounded"
                   alt="Slider placeholder 2"
@@ -186,7 +186,7 @@ const BlogDetailsContent = async ({ blogInfo }) => {
                   dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
                 />
                 <article className="">
-                  <img
+                  <Image
                     src={coverImageUrl}
                     className="card-img-top"
                     alt={title}

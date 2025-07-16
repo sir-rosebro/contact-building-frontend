@@ -31,7 +31,7 @@ const AboutV1Content = () => {
                     From fixing minor issues to handling full renovations, we’re here to make property upkeep stress-free and professional.
                 </p>
                 <p className="text-muted mt-4">
-                    Our reputation is built on honesty, consistency, and results. Every job we take on is backed by real experience and a strong commitment to quality. We're fully insured, compliant with local regulations, and always clear about our pricing and timelines.
+                    Our reputation is built on honesty, consistency, and results. Every job we take on is backed by real experience and a strong commitment to quality. We&apos;re fully insured, compliant with local regulations, and always clear about our pricing and timelines.
                 </p>
                 <div
                     className="contact-sticker my-4 p-3 rounded-5 d-flex align-items-center gap-3"

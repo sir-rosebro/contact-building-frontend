@@ -272,17 +272,17 @@ copy
       <div className="carousel-inner">
         <div className="carousel-item active">
           <p className={styles.testimonial}>
-            "Hills Waterproofing fixed our Sydney CBD apartment’s bathroom leaks perfectly!" – Sarah T., Sydney CBD
+            Hills Waterproofing fixed our Sydney CBD apartment’s bathroom leaks perfectly! – Sarah T., Sydney CBD
           </p>
         </div>
         <div className="carousel-item">
           <p className={styles.testimonial}>
-            "Their painting services refreshed our Hills District home. Amazing work!" – James L., Hills District
+            Their painting services refreshed our Hills District home. Amazing work! – James L., Hills District
           </p>
         </div>
         <div className="carousel-item">
           <p className={styles.testimonial}>
-            "Perfect tiling for our Surry Hills kitchen. Highly recommend!" – Emma R., Surry Hills
+            Perfect tiling for our Surry Hills kitchen. Highly recommend! – Emma R., Surry Hills
           </p>
         </div>
       </div>

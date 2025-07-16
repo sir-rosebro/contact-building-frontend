@@ -12,7 +12,7 @@ const ContactContent = () => {
                     <div className="col-lg-6">
   <h2 className="mb-3">Contact the Best Handyman & Waterproofing Services in Sydney</h2>
   <p className="mb-4">
-    Looking for reliable <strong>waterproofing</strong>, <strong>general repairs</strong>, or <strong>handyman painting</strong> in Sydney? You've come to the right place.
+    Looking for reliable <strong>waterproofing</strong>, <strong>general repairs</strong>, or <strong>handyman painting</strong> in Sydney? You&apos;ve come to the right place.
     We offer <strong>5-star handyman services</strong> across the Northern Beaches and Greater Sydney, tailored to your unique property needs.
   </p>
 
