@@ -82,7 +82,7 @@ const ServiceDetailsHandyman = () => {
                       Our fully insured and background-checked handymen come equipped to handle a wide range of minor repairs, ensuring the job is done right the first time.
                     </p>
                     <p>
-                      Whether you're a homeowner, property manager, or tenant — we deliver peace of mind and quality results. See the before/after slider above for a glimpse into our everyday transformations.
+                      Whether you&apos;re a homeowner, property manager, or tenant — we deliver peace of mind and quality results. See the before/after slider above for a glimpse into our everyday transformations.
                     </p>
                     <p>
                       Call <strong>1300 513 529</strong> or <a href="/contact">book your handyman service now</a> and let us take care of your to-do list.

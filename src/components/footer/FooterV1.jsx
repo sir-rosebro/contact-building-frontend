@@ -22,7 +22,7 @@ const FooterV1 = () => {
                                     </Link>
                                 </div>
                                 <div className="footer-wiget-text">
-                                    <p>Contact Building Services is a Sydney-based local company with over 15 years of experience in painting and handyman work. We're proud to offer reliable, high-quality services backed by a team of skilled and dedicated craftsmen.</p>
+                                    <p>Contact Building Services is a Sydney-based local company with over 15 years of experience in painting and handyman work. We&apos;re proud to offer reliable, high-quality services backed by a team of skilled and dedicated craftsmen.</p>
                                 </div>
                             </div>
                         </div>

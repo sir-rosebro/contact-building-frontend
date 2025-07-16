@@ -55,10 +55,10 @@ const ServiceDetailsPainting = () => {
                   <div className="service-details-content">
                     <h1 className="main-heading">Professional Painting Services in Sydney</h1>
                     <p>
-                      Transform your property with <strong>Contact Building Services</strong> — Sydney’s trusted experts in residential and commercial painting for over <strong>15 years</strong>. We’ve enhanced the look of <strong>300+ homes and offices</strong> across the Inner West, Hills District, and Northern Beaches.
+                      Transform your property with <strong>Contact Building Services</strong> — Sydney&apos;s trusted experts in residential and commercial painting for over <strong>15 years</strong>. We’ve enhanced the look of <strong>300+ homes and offices</strong> across the Inner West, Hills District, and Northern Beaches.
                     </p>
                     <p>
-                      Whether you're freshening up your interiors or protecting your exterior from Sydney’s weather, our licensed painters deliver clean, flawless results using premium Dulux and Taubmans paints.
+                      Whether you&apos;re freshening up your interiors or protecting your exterior from Sydney&apos;s weather, our licensed painters deliver clean, flawless results using premium Dulux and Taubmans paints.
                     </p>
                     <ul className="list-unstyled service-list">
                       <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: '#F60' }}></i>Interior wall and ceiling painting</li>

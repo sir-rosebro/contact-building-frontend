@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function ChatInterface() {
   const [messages, setMessages] = useState([
@@ -115,7 +116,7 @@ export default function ChatInterface() {
                     >
                       {message.text && <p className="m-0">{message.text}</p>}
                       {message.image && (
-                        <img
+                        <Image
                           src={message.image}
                           alt="Uploaded"
                           className="rounded"

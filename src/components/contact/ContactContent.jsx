@@ -10,7 +10,7 @@ const ContactContent = () => {
                     <div className='mb-5'>
                         <h1 className="display-5 fw-bold text-dark">Contact the Best Handyman Services in Sydney</h1>
                         <p className="mb-4 lead text-muted mt-5">
-                            Looking for reliable <strong>waterproofing</strong>, <strong>general repairs</strong>, or <strong>handyman painting</strong> in Sydney? You've come to the right place.
+                            Looking for reliable <strong>waterproofing</strong>, <strong>general repairs</strong>, or <strong>handyman painting</strong> in Sydney? You&apos;ve come to the right place.
                             We offer <strong>5-star handyman services</strong> across the Northern Beaches and Greater Sydney, tailored to your unique property needs.
                         </p>
                     </div>

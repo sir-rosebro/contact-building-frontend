@@ -82,10 +82,10 @@ export default function Testimonials() {
               <div className={`${styles.testimonialCard} card border-0 shadow-sm h-100`}>
                 <div className="card-body text-center">
                   <blockquote className={`blockquote mb-4 ${styles.quote}`}>
-                    <p>"{testimonial.quote}"</p>
+                    <p>{testimonial.quote}</p>
                   </blockquote>
                   <div className="d-flex justify-content-center align-items-center">
-                    <img
+                    <Image
                       src={testimonial.image}
                       alt={testimonial.name}
                       className={`${styles.customerImage} rounded-circle me-3`}

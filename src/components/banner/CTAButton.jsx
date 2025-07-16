@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 
@@ -114,7 +115,7 @@ const CTAButton = () => {
                       Thank you for reaching out to us!
                     </h5>
                     <p className="thank-you-message">
-                      We'll get back to you soon.
+                      We&apos;ll get back to you soon.
                     </p>
                   </div>
                 </div>
@@ -328,7 +329,7 @@ const CTAButton = () => {
                             <div className="d-flex flex-wrap gap-3 justify-content-center">
                               {previews.map((preview, index) => (
                                 <div key={index} className="preview-card">
-                                  <img
+                                  <Image
                                     src={preview}
                                     alt={`Preview ${index + 1}`}
                                     className="preview-img"
