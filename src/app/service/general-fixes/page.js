@@ -24,7 +24,10 @@ const SingleService = ({ params = {} }) => {
 
     return (
         <>
-            <Hero/>
+            <Hero
+                page="General Fixes in Sydney"
+                description="A general handyman service in Sydney is a versatile solution for various home repairs and maintenance tasks. From fixing leaky faucets to assembling furniture, these skilled professionals handle a wide range of jobs efficiently and affordably."
+            />
             <HandymanDetailsContent serviceInfo={data} />
             <CostEstimationWidgetPrompt />
             <FooterV1 />

@@ -392,6 +392,10 @@ li i.fa-bars {
     border-radius: 32px;
 }
 
+.eulding-btn a:hover {
+    border: 1px solid #F60;
+}
+
 .orange-rounded-btn {
     display: inline-flex;
     align-items: center;

@@ -23,7 +23,10 @@ const SingleService = ({ params = {} }) => {
 
     return (
         <>
-            <Hero/>
+            <Hero
+                page="Painting Services in Sydney"
+                description="Professional painting services in Sydney offer high-quality interior and exterior painting solutions. Whether it's refreshing a single room or giving your whole house a new look, skilled painters ensure a smooth, durable finish with attention to detail."
+            />
             <PaintingDetailsContent serviceInfo={data} />
             <CostEstimationWidgetPrompt />
             <FooterV1 />
