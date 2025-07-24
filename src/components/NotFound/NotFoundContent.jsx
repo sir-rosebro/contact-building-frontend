@@ -13,12 +13,6 @@ const NotFoundContent = () => {
                             <div className="col-lg-8 offset-lg-2">
                                 <h1>404</h1>
                                 <h2>Sorry Page Was Not Found!</h2>
-                                <p>
-                                    Household shameless incommode at no objection behaviour. Especially do at he possession insensible sympathize boisterous it. Songs he on an widen me event truth.
-                                </p>
-                                <div className="eulding-btn">
-                                    <Link className="btn mt-20 btn-md btn-theme bordered" href="/">Back to Home</Link>
-                                </div>
                             </div>
                         </div>
                     </div>

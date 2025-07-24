@@ -24,6 +24,12 @@
             "title": "General Fixes",
             "icon": "bi bi-chevron-right",
             "categoriesLink": "service-details"
+        },
+        {
+            "id": 5,
+            "title": "Tiling",
+            "icon": "bi bi-chevron-right",
+            "categoriesLink": "service-details"
         }
     ]
 }

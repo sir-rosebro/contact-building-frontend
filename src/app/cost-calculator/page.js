@@ -18,7 +18,6 @@ export const metadata = {
 const About = () => {
     return (
         <>
-            <HeaderV1 />
             <Hero 
                 page="Cost Estimation Calculator"
                 description="Get an instant, accurate estimate for your bathroom or kitchen renovation in Sydney using our free online cost calculator."

@@ -3,6 +3,7 @@ import React from 'react';
 import NotFoundContent from '../components/NotFound/NotFoundContent';
 import FooterV1 from '../components/footer/FooterV1';
 import HeaderV2 from '../components/header/HeaderV2';
+import HeaderV1 from '../components/header/HeaderV1';
 
 export const metadata = {
     title: "404 Error - Euildint Construction Building NextJS Template"
@@ -10,11 +11,11 @@ export const metadata = {
 
 const NotFound = () => {
     return (
-        <>
-            <HeaderV2 />
+        <div style={{ background: "radial-gradient(transparent, #828282)"}}>
+            <HeaderV1/>
             <NotFoundContent />
             <FooterV1 />
-        </>
+        </div>
     );
 };
 

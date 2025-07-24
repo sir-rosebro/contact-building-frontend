@@ -2192,6 +2192,10 @@
     .contact-sticker {
         width: 100%;
     }
+
+    .tagline {
+        display: none;
+    }
 }
 
 /* small mobile :480px. */

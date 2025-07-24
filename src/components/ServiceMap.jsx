@@ -340,7 +340,7 @@ export default function ServiceAreaMap() {
     } else {
       loadMap();
     }
-  }, [ activeInfoWindows, markers]);
+  }, [ ]);
 
   return (
     <div className="my-4">
