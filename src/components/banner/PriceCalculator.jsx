@@ -1461,7 +1461,7 @@ const PriceCalculator = () => {
           }
 
           .estimation-benefits li i {
-            color: #fd6601;
+            color: var(--theme-color);
           }
 
           .estimation-cta {

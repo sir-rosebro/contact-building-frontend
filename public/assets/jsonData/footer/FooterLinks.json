@@ -11,19 +11,19 @@
         "id": 2,
         "linkText": "Cost Estimation Calculator",
         "icon": "bi bi-arrow-right-circle",
-        "link": "/faqs"
+        "link": "/cost-calculator"
       },
       {
         "id": 3,
         "linkText": "Why Us?",
         "icon": "bi bi-arrow-right-circle",
-        "link": "/about"
+        "link": "/why-us"
       },
       {
         "id": 4,
         "linkText": "Our Blogs",
         "icon": "bi bi-arrow-right-circle",
-        "link": "/team"
+        "link": "/blog-us"
       },
       {
         "id": 5,

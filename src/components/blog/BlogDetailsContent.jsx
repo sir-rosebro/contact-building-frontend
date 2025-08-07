@@ -191,6 +191,8 @@ const BlogDetailsContent = async ({ blogInfo }) => {
                     className="card-img-top"
                     alt={title}
                     loading="lazy"
+                    width={900}
+                    height={600}
                   />
                   <div className="pt-5">
                     <h1 className="main-heading mb-4">{title}</h1>

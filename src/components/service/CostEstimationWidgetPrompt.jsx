@@ -5,13 +5,13 @@ const CostEstimationWidgetPrompt = () => {
     <div className="container my-5">
         <div
             className="row align-items-center p-4 rounded-4 shadow"
-            style={{ backgroundColor: '#fff3e6', borderLeft: '6px solid #f60' }}
+            style={{ backgroundColor: '#fff3e6', borderLeft: '6px solid var(--theme-color)' }}
         >
             <div className="col-12 col-md-2 text-center mb-3 mb-md-0">
                 <div
                 className="d-inline-flex align-items-center justify-content-center rounded-circle"
                 style={{
-                    backgroundColor: '#f60',
+                    backgroundColor: 'var(--theme-color)',
                     width: '70px',
                     height: '70px',
                 }}
@@ -36,7 +36,7 @@ const CostEstimationWidgetPrompt = () => {
             <div className="col-12 col-md-3 text-center text-md-end">
                 <button
                 className="btn px-4 py-2 fw-semibold text-white"
-                style={{ backgroundColor: '#f60', border: 'none' }}
+                style={{ backgroundColor: 'var(--theme-color)', border: 'none' }}
                 >
                 Get an Estimate
                 </button>

@@ -27,7 +27,7 @@
 .before-after-wrapper .label {
   position: absolute;
   top: 1rem;
-  background: #f60;
+  background: var(--theme-color);;
   color: #fff;
   padding: 0.375rem 0.75rem;
   font-weight: bold;
@@ -52,7 +52,7 @@
   transform: translate(-50%, -50%);
   width: clamp(3rem, 8vw, 4rem); /* Responsive size */
   height: clamp(3rem, 8vw, 4rem);
-  background-color: #f60;
+  background-color: var(--theme-color);;
   border: 3px solid #fff;
   border-radius: 50%;
   z-index: 4;

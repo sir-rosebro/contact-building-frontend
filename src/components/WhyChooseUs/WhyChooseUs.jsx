@@ -121,7 +121,7 @@ export default function WaterproofingHero() {
               <div
                 className="text-white d-flex"
                 style={{
-                  background: '#F60',  // Dark orange color
+                  background: 'var(--theme-color);',  // Dark orange color
                   padding: '1rem 2rem',
                   borderRadius: '3rem',
                   transform: 'translateY(-50%)',
@@ -229,7 +229,7 @@ export default function WaterproofingHero() {
                       backgroundColor: '#ffe5cc',
                       width: '28px',
                       height: '28px',
-                      color: '#f60',
+                      color: 'var(--theme-color);',
                       fontSize: '1rem'
                     }}
                   >
@@ -244,7 +244,7 @@ export default function WaterproofingHero() {
               href="/quote"
               className="btn text-white px-4 py-2"
               style={{
-                backgroundColor: '#f60',
+                backgroundColor: 'var(--theme-color);',
                 borderRadius: '2rem',
               }}
             >

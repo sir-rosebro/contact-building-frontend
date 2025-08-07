@@ -61,11 +61,11 @@ const ServiceDetailsHandyman = () => {
                       Whether it’s patching a hole, fixing hinges, regrouting tiles, or mounting TVs, we provide fast, friendly, and professional service at a fair price — with no job too small.
                     </p>
                     <ul className="list-unstyled service-list">
-                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: '#F60' }}></i>Wall patching and plaster repairs</li>
-                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: '#F60' }}></i>Leaking tap and pipe fixes</li>
-                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: '#F60' }}></i>Furniture and flat-pack assembly</li>
-                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: '#F60' }}></i>TV and shelf mounting</li>
-                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: '#F60' }}></i>Door adjustments, locks, and handles</li>
+                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color);' }}></i>Wall patching and plaster repairs</li>
+                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color);' }}></i>Leaking tap and pipe fixes</li>
+                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color);' }}></i>Furniture and flat-pack assembly</li>
+                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color);' }}></i>TV and shelf mounting</li>
+                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color);' }}></i>Door adjustments, locks, and handles</li>
                     </ul>
                   </div>
                 </div>
