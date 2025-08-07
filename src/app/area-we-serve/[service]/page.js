@@ -159,7 +159,7 @@ const ServiceAreas = ({ params = {} }) => {
                 <h2 className={styles.heading}>Contact Building Services – Expert Painting Services in Sydney</h2>
                 <p className={styles.subheading}>Your Reliable Painting Professionals in Sydney City & Nearby Regions</p>
                 <p className={styles.intro}>
-                  At Contact Building Services, we offer high-quality painting services in Sydney CBD, revitalizing homes, multi-story apartments, traditional buildings, and commercial spaces with fresh, durable finishes. Our experienced team applies top-quality paints and proven methods suited for urban architectures and busy city lifestyles. Whether you need interior wall refreshing, exterior weatherproofing, or full property makeovers, we're committed to delivering vibrant, long-lasting results that enhance aesthetics and protection year-round.
+                  At Contact Building Services, we offer high-quality painting services in Sydney CBD, revitalizing homes, multi-story apartments, traditional buildings, and commercial spaces with fresh, durable finishes. Our experienced team applies top-quality paints and proven methods suited for urban architectures and busy city lifestyles. Whether you need interior wall refreshing, exterior weatherproofing, or full property makeovers, we`@apos`re committed to delivering vibrant, long-lasting results that enhance aesthetics and protection year-round.
                 </p>
                 {/* <div className={styles.ctaWrapper}>
                   <Link href="tel:[Your Phone Number]" className={styles.ctaButton}>Call Now: [Your Phone Number]</Link>

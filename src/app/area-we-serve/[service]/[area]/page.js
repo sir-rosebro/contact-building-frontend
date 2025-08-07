@@ -10,6 +10,7 @@ import styles from './style.module.css';
 import SuburbMap from '@/src/components/SuburbMap';
 import QuoteSection from '@/src/components/QuoteSection';
 
+
 const areas = [
   { name: 'sydney-cbd', desc: 'Painting services in the heart of Sydney, designed for apartments, townhouses, and commercial buildings.', lat: -33.8688, lng: 151.2093 },
   { name: 'inner-west-council', desc: 'The Inner West’s trusted team for reliable, efficient painting for urban homes and strata buildings.', lat: -33.8964, lng: 151.1400 },
@@ -230,7 +231,7 @@ const AreaPage = ({ params = {} }) => {
                 <h2 className={styles.heading}>Contact Building Services – Expert {displayService} Services in {displayArea}</h2>
                 <p className={styles.subheading}>Your Reliable {displayService} Professionals in {displayArea} & Nearby Regions</p>
                 <p className={styles.intro}>
-                  At Contact Building Services, we offer high-quality {service} services in {displayArea}, revitalizing homes, multi-story apartments, traditional buildings, and commercial spaces with fresh, durable finishes. Our experienced team applies top-quality paints and proven methods suited for urban architectures and busy city lifestyles. Whether you need interior wall refreshing, exterior weatherproofing, or full property makeovers, we're committed to delivering vibrant, long-lasting results that enhance aesthetics and protection year-round.
+                  At Contact Building Services, we offer high-quality {service} services in {displayArea}, revitalizing homes, multi-story apartments, traditional buildings, and commercial spaces with fresh, durable finishes. Our experienced team applies top-quality paints and proven methods suited for urban architectures and busy city lifestyles. Whether you need interior wall refreshing, exterior weatherproofing, or full property makeovers, we`&apos`re committed to delivering vibrant, long-lasting results that enhance aesthetics and protection year-round.
                 </p>
               </div>
             </section>
