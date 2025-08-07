@@ -10,6 +10,7 @@ import styles from './style.module.css';
 import SuburbMap from '@/src/components/SuburbMap';
 import QuoteSection from '@/src/components/QuoteSection';
 
+
 const areas = [
   { name: 'sydney-cbd', desc: 'Painting services in the heart of Sydney, designed for apartments, townhouses, and commercial buildings.', lat: -33.8688, lng: 151.2093 },
   { name: 'inner-west-council', desc: 'The Inner West’s trusted team for reliable, efficient painting for urban homes and strata buildings.', lat: -33.8964, lng: 151.1400 },
