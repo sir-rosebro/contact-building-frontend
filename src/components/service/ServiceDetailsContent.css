@@ -15,7 +15,7 @@
     }
 
     .sidebar-contact-widget .telephone-span {
-        background-color: #fd6601;
+        background-color: var(--theme-color);
         padding: 1.5rem;
     }
 
@@ -84,17 +84,17 @@
       }
       
       .stat-item:nth-of-type(2) {
-        border-inline: 3px dotted #f60;
+        border-inline: 3px dotted var(--theme-color);;
       }
 
       /* p > strong {
-        color: #f60;
+        color: var(--theme-color);;
       } */
 
       .stat-number {
         font-size: 2.5rem;
         font-weight: 700;
-        color: #F60;
+        color: var(--theme-color);;
         margin-bottom: 10px;
       }
       
@@ -128,7 +128,7 @@
       .telephone-span {
         /* width: 60px;
         height: 60px;
-        background: linear-gradient(135deg, #F60, #ff8c00);
+        background: linear-gradient(135deg, var(--theme-color);, #ff8c00);
         margin: 0 auto 15px; */
       }
 /*       
@@ -145,7 +145,7 @@
       
       .cta-button {
         display: inline-block;
-        background: linear-gradient(135deg, #F60, #ff8c00);
+        background: linear-gradient(135deg, var(--theme-color), #ff8c00);
         color: #fff;
         padding: 12px 25px;
         border-radius: 25px;

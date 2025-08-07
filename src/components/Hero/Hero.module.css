@@ -1,5 +1,5 @@
 .trapezium {
-    background-color: #F60; /* Dark orange */
+    background-color: var(--theme-color);; /* Dark orange */
     color: white;
     padding: 3rem;
     clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);

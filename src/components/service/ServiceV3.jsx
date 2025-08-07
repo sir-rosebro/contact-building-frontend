@@ -83,14 +83,14 @@ function renderService(service, large = false) {
       >
         <div className="card-img-overlay d-grid p-4" style={{ background: "rgba(0,0,0,0.2)" }}>
           <div className="text-white">
-            <h3 className="card-title fs-5 fw-bold mb-2" style={{ color: "#F60" }}>
+            <h3 className="card-title fs-5 fw-bold mb-2" style={{ color: "var(--theme-color)" }}>
               {service.title}
             </h3>
             <div className="d-flex align-items-center gap-2">
               <p className="card-text fs-6 opacity-75 mb-0">{service.description}</p>
               <i
                 className="bi bi-arrow-right fs-5"
-                style={{ color: "#F60" }}
+                style={{ color: "var(--theme-color)" }}
                 aria-label={`Learn more about ${service.title}`}
               ></i>
             </div>
@@ -103,7 +103,7 @@ function renderService(service, large = false) {
             transition: all 0.3s ease;
           }
           .service-card:hover {
-            box-shadow: 0 4px 16px rgba(255, 102, 0, 0.3); /* #F60 shadow */
+            box-shadow: 0 4px 16px rgba(255, 102, 0, 0.3); /* var(--theme-color); shadow */
             filter: brightness(0.8);
           }
           .card-img-overlay {

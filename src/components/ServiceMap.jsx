@@ -77,7 +77,7 @@ export default function ServiceAreaMap() {
 
       const button = document.createElement('button');
       button.textContent = 'View Service Areas';
-      button.style.cssText = 'background-color:#F60;border: none;padding:12px 20px;border-radius:30px;color:white;font-weight:bold;font-size:14px;cursor:pointer;margin-right:10px;';
+      button.style.cssText = 'background-color: var(--theme-color);border: none;padding:12px 20px;border-radius:30px;color:white;font-weight:bold;font-size:14px;cursor:pointer;margin-right:10px;';
       button.addEventListener('click', () => {
         activeInfoWindows.forEach(infoWindow => infoWindow.close());
         setActiveInfoWindows([]);

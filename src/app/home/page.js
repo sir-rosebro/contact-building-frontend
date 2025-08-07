@@ -17,7 +17,7 @@ export const metadata = {
 const fetchBlogs = async () => {
     try {
       const res = await fetch(
-        'https://funny-virtue-0648592741.strapiapp.com/api/articles?sort=publishedAt:desc&pagination[limit]=4&fields=title,slug,description,publishedAt&populate[cover][fields]=url,alternativeText&populate[author][fields]=name&populate[author][populate][avatar][fields]=url&populate[category][fields]=name',
+        'https://funny-virtue-0648592741.strapiapp.com/api/articles?sort=publishedAt:desc&pagination[limit]=5&fields=title,slug,description,publishedAt&populate[cover][fields]=url,alternativeText&populate[author][fields]=name&populate[author][populate][avatar][fields]=url&populate[category][fields]=name',
         { cache: 'no-store' }
       );
       if (!res.ok) {

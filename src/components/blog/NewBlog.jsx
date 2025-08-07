@@ -49,7 +49,7 @@ const NewBlog = ({ blogs }) => {
                   />
                   <span
                     className="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white"
-                    style={{ backgroundColor: '#F60', fontSize: '0.75rem', borderRadius: '0.2rem' }}
+                    style={{ backgroundColor: 'var(--theme-color)', fontSize: '0.75rem', borderRadius: '0.2rem' }}
                   >
                     {blogs?.category?.name}
                   </span>

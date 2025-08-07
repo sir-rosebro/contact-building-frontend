@@ -71,11 +71,11 @@ const ServiceDetailsContent = () => {
                                             Our Sydney-based team uses advanced techniques like membrane coatings, epoxy injections, and eco-friendly sealants to prevent leaks, mould, and structural damage. From basements to rooftops, we deliver tailored solutions for homes, offices, and industrial sites across Greater Sydney.
                                         </p>
                                         <ul className="list-unstyled service-list">
-                                            <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: '#F60' }}></i>Basement and foundation waterproofing</li>
-                                            <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: '#F60' }}></i>Rooftop and terrace membranes</li>
-                                            <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: '#F60' }}></i>Bathroom and wet area sealing</li>
-                                            <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: '#F60' }}></i>Foundation crack repairs</li>
-                                            <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: '#F60' }}></i>External wall and balcony protection</li>
+                                            <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Basement and foundation waterproofing</li>
+                                            <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Rooftop and terrace membranes</li>
+                                            <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Bathroom and wet area sealing</li>
+                                            <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Foundation crack repairs</li>
+                                            <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>External wall and balcony protection</li>
                                         </ul>
                                     </div>
                                 </div>

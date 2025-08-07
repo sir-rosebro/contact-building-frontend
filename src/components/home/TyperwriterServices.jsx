@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className='text-whtite mb-4'>
         <h4 className='text-white fw-normal'> with expert help in </h4>
-      <h1 className='fw-medium fs-1' style={{ color: '#f60'}}>
+      <h1 className='fw-medium fs-1' style={{ color: 'var(--theme-color)'}}>
         <Typewriter
           options={{
             strings: ['Painting', 'Water Proofing', 'Kitchen and Bathroom Renovation', 'General Fixing', 'Tiling'],

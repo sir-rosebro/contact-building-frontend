@@ -24,7 +24,7 @@ const SidebarBlog = ({ blogs }) => {
             />
             <span
               className="position-absolute bottom-0 start-0 m-1 px-1 py-0 text-white"
-              style={{ backgroundColor: '#F60', fontSize: '0.65rem', borderRadius: '0.2rem' }}
+              style={{ backgroundColor: 'var(--theme-color)', fontSize: '0.65rem', borderRadius: '0.2rem' }}
             >
               {blog?.category?.name}
             </span>
@@ -51,7 +51,7 @@ const SidebarBlog = ({ blogs }) => {
   //                 <Image src={smallFirstBlogPost} className="img-fluid rounded" alt="Painting Tips" />
   //                 <span
   //                   className="position-absolute bottom-0 start-0 m-1 px-1 py-0 text-white"
-  //                   style={{ backgroundColor: '#F60', fontSize: '0.65rem', borderRadius: '0.2rem' }}
+  //                   style={{ backgroundColor: 'var(--theme-color);', fontSize: '0.65rem', borderRadius: '0.2rem' }}
   //                 >
   //                   Painting
   //                 </span>
@@ -74,7 +74,7 @@ const SidebarBlog = ({ blogs }) => {
   //                 <Image src={smallSecondBlogPost} className="img-fluid rounded" alt="General Fixes" />
   //                 <span
   //                   className="position-absolute bottom-0 start-0 m-1 px-1 py-0 text-white"
-  //                   style={{ backgroundColor: '#F60', fontSize: '0.65rem', borderRadius: '0.2rem' }}
+  //                   style={{ backgroundColor: 'var(--theme-color);', fontSize: '0.65rem', borderRadius: '0.2rem' }}
   //                 >
   //                   General Fixes
   //                 </span>
@@ -97,7 +97,7 @@ const SidebarBlog = ({ blogs }) => {
   //                 <Image src={smallThirdBlogPost} className="img-fluid rounded" alt="Renovation Tips" />
   //                 <span
   //                   className="position-absolute bottom-0 start-0 m-1 px-1 py-0 text-white"
-  //                   style={{ backgroundColor: '#F60', fontSize: '0.65rem', borderRadius: '0.2rem' }}
+  //                   style={{ backgroundColor: 'var(--theme-color);', fontSize: '0.65rem', borderRadius: '0.2rem' }}
   //                 >
   //                   Renovation
   //                 </span>
