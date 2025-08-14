@@ -32,11 +32,11 @@ const MainMenu = ({ toggleSubMenu }) => {
                     <Link href="#" onClick={toggleSubMenu} scroll={false}> Services <i className="fas fa-chevron-down"></i></Link>
                     <div className="sub-menu">
                         <ul className='dropdown-menu-content'>
-                            <li><Link href="/services">Bathroom & Kitchen Renovation</Link></li>
-                            <li><Link href="/service-details/1">Waterproofing</Link></li>
-                            <li><Link href="/service-details/1">Painting</Link></li>
-                            <li><Link href="/service-details/1">General Fixes</Link></li>
-                            <li><Link href="/service-details/1">Tiling</Link></li>
+                            <li><Link href="/service/renovation">Bathroom & Kitchen Renovation</Link></li>
+                            <li><Link href="/service/waterproofing">Waterproofing</Link></li>
+                            <li><Link href="/service/painting">Painting</Link></li>
+                            <li><Link href="/service/general-fixes">General Fixes</Link></li>
+                            <li><Link href="/service/tiling">Tiling</Link></li>
                         </ul>
                     </div>
                 </li>

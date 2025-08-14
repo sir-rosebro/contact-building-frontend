@@ -1,3 +1,5 @@
+import dynamic from 'next/dynamic';
+
 import AboutV1 from '@/src/components/about/AboutV1';
 import FeatureV1 from '@/src/components/feature/FeatureV1';
 import FooterV1 from '@/src/components/footer/FooterV1';
@@ -7,6 +9,12 @@ import WorkProgressV1 from '@/src/components/progress/WorkProgressV1';
 import ServiceV3 from '@/src/components/service/ServiceV3';
 import NewBlog from '@/src/components/blog/NewBlog';
 import ChatWidget from '@/src/components/ChatWidget/ChatWidget';
+// import BlogSkeleton from '@/src/components/skeleton/skeleton';
+
+// const NewBlog = dynamic(() => import('@/src/components/blog/NewBlog'), {
+//     ssr: false,
+//     loading: () => <BlogSkeleton />,
+// });
 
 
 export const metadata = {

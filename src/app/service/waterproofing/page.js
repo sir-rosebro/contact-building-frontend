@@ -22,7 +22,10 @@ const SingleService = ({ params = {} }) => {
 
     return (
         <>
-            <Hero/>
+            <Hero
+                page="Waterproofing Services in Sydney"
+                description="Professional waterproofing services in Sydney provide effective solutions to protect properties from water damage and leaks. Whether it's sealing bathrooms, balconies, basements, or roofs, skilled waterproofers ensure thorough, durable protection with high-quality materials and attention to detail."
+            />
             <ServiceDetailsContent serviceInfo={data} />
             <CostEstimationWidgetPrompt />
             <FooterV1 />

@@ -5,7 +5,7 @@
         "id": 1,
         "linkText": "Area We Serve",
         "icon": "bi bi-arrow-right-circle",
-        "link": "/area-we-serve"
+        "link": "/area-we-serve/painting"
       },
       {
         "id": 2,
@@ -23,7 +23,7 @@
         "id": 4,
         "linkText": "Our Blogs",
         "icon": "bi bi-arrow-right-circle",
-        "link": "/blog-us"
+        "link": "/blog-grid"
       },
       {
         "id": 5,
