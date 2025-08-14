@@ -10,7 +10,7 @@ import handleSmoothScroll from '../utilities/handleSmoothScroll';
 import Typewriter from '../home/TyperwriterServices';
 import HeaderV1 from '../header/HeaderV1';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import CTAButton from './CTAButton';
 
 const BannerV1 = () => {

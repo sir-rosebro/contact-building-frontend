@@ -41,6 +41,7 @@ const loadGoogleMaps = (() => {
   };
 })();
 
+
 const SuburbMap = ({ lat, lng, name }) => {
   const mapRef = useRef(null);
 
@@ -49,7 +50,7 @@ const SuburbMap = ({ lat, lng, name }) => {
       const map = new window.google.maps.Map(mapRef.current, {
         center: { lat, lng },
         zoom: 12,
-        mapTypeId: 'satellite',
+        // mapTypeId: 'satellite',
         mapTypeControl: false,
         streetViewControl: false,
         zoomControl: false,
@@ -57,12 +58,14 @@ const SuburbMap = ({ lat, lng, name }) => {
         rotateControl: false,
         scaleControl: false,
         scrollwheel: false,
+        disableDefaultUI: true,
+        keyboardShortcuts: false,
         styles: [
-          {
-            featureType: 'all',
-            elementType: 'all',
-            stylers: [{ saturation: -100 }],
-          },
+          // {
+          //   featureType: 'all',
+          //   elementType: 'all',
+          //   stylers: [{ saturation: -100 }],
+          // },
           {
             featureType: 'all',
             elementType: 'labels',

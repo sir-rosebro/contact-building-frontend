@@ -23,7 +23,10 @@ const SingleService = ({ params = {} }) => {
 
     return (
         <>
-            <Hero/>
+            <Hero
+                page="Bathroom and Kitchen Renovation Services in Sydney"
+                description="Professional bathroom and kitchen renovation services in Sydney transform your home's essential spaces into modern, functional areas. From updating fixtures, tiling, and waterproofing in bathrooms to custom cabinetry, appliances, and layouts in kitchens, experienced renovators deliver high-quality, durable results tailored to your style and needs."
+            />
             <RenovationDetailsContent serviceInfo={data} />
             <CostEstimationWidgetPrompt />
             <FooterV1 />

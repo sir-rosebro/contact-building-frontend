@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
 import { Range } from "react-range";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import { Tooltip } from "react-tooltip";
 import costEstimationImageBlog from '@/public/assets/images/blog/blog-cost-estimation.jpg'
 

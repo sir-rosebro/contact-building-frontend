@@ -2,10 +2,9 @@ import Image from 'next/image';
 
 const CostEstimationWidgetPrompt = () => {
   return (
-    <div className="container my-5">
+    <div className="cost-estimation-prompt container my-5">
         <div
             className="row align-items-center p-4 rounded-4 shadow"
-            style={{ backgroundColor: '#fff3e6', borderLeft: '6px solid var(--theme-color)' }}
         >
             <div className="col-12 col-md-2 text-center mb-3 mb-md-0">
                 <div

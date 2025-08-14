@@ -9,7 +9,7 @@ const Hero = ({ page, description }) => {
     <section className={`pb-5 position-relative ${styles.aboutUs}`}>
       <HeaderV1 />
       <div className={`${styles.backgroundOverlay}`}></div>
-      <div style={{ zIndex: 1, position: 'relative', marginTop: '10rem' }}>
+      <div className={styles.trapeziumWrapper}>
         <div className="row align-items-center">
           <div className="col-md-6 text-center text-md-start">
             <div className={styles.trapezium}>

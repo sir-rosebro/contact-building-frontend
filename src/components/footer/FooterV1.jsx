@@ -34,7 +34,7 @@ const FooterV1 = () => {
                                 <div className="footer-wiget-menu">
                                     <ul className='p-0'>
                                         {FooterServices.serviceData.map(service =>
-                                            <li key={service.id}><Link href={service.link} onClick={handleSmoothScroll}>{service.serviceText}</Link></li>
+                                            <li key={service.id}><Link href={service.link}>{service.serviceText}</Link></li>
                                         )}
                                     </ul>
                                 </div>
@@ -48,7 +48,7 @@ const FooterV1 = () => {
                                 <div className="footer-wiget-menu">
                                     <ul className='p-0'>
                                         {FooterLinks.linkData.map(data =>
-                                            <li key={data.id}><Link href={data.link} onClick={handleSmoothScroll}>{data.linkText}</Link></li>
+                                            <li key={data.id}><Link href={data.link}>{data.linkText}</Link></li>
                                         )}
                                     </ul>
                                 </div>

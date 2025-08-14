@@ -51,7 +51,7 @@ const NewBlog = ({ blogs }) => {
                     className="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white"
                     style={{ backgroundColor: 'var(--theme-color)', fontSize: '0.75rem', borderRadius: '0.2rem' }}
                   >
-                    {blogs?.category?.name}
+                     {mainBlog?.category?.name}
                   </span>
                 </div>
                 <div className="card-body">
