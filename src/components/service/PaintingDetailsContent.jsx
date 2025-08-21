@@ -61,11 +61,11 @@ const ServiceDetailsPainting = () => {
                       Whether you&apos;re freshening up your interiors or protecting your exterior from Sydney&apos;s weather, our licensed painters deliver clean, flawless results using premium Dulux and Taubmans paints.
                     </p>
                     <ul className="list-unstyled service-list">
-                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Interior wall and ceiling painting</li>
-                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Exterior house and commercial painting</li>
-                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Fence, deck, and feature wall finishes</li>
-                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Surface preparation and patching</li>
-                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Eco-friendly and low-VOC paint options</li>
+                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color)' }}></i>Interior wall and ceiling painting</li>
+                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color)' }}></i>Exterior house and commercial painting</li>
+                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color)' }}></i>Fence, deck, and feature wall finishes</li>
+                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color)' }}></i>Surface preparation and patching</li>
+                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color)' }}></i>Eco-friendly and low-VOC paint options</li>
                     </ul>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ const ServiceDetailsPainting = () => {
           </div>
 
           <div className="col-lg-4 col-md-12 mt-30 mt-lg-0">
-            <CategoriesWidget />
+            <CategoriesWidget service="painting"/>
             <CTABlock />
           </div>
         </div>

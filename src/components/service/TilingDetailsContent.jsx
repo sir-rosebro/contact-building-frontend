@@ -60,11 +60,11 @@ const ServiceDetailsTiling = () => {
                       Whether you&apos;re updating your bathroom floors or installing durable outdoor tiles, our licensed tilers deliver precise, flawless results using premium ceramic, porcelain, and natural stone tiles.
                     </p>
                     <ul className="list-unstyled service-list">
-                      <li className="mb-3"><i className="bi bi-square me-2" style={{ color: 'var(--theme-color);' }}></i>Bathroom and kitchen tiling</li>
-                      <li className="mb-3"><i className="bi bi-square me-2" style={{ color: 'var(--theme-color);' }}></i>Floor and wall tile installations</li>
-                      <li className="mb-3"><i className="bi bi-square me-2" style={{ color: 'var(--theme-color);' }}></i>Outdoor patio and pool tiling</li>
-                      <li className="mb-3"><i className="bi bi-square me-2" style={{ color: 'var(--theme-color);' }}></i>Surface preparation and waterproofing</li>
-                      <li className="mb-3"><i className="bi bi-square me-2" style={{ color: 'var(--theme-color);' }}></i>Custom mosaic and feature designs</li>
+                      <li className="mb-3"><i className="bi bi-square me-2" style={{ color: 'var(--theme-color)' }}></i>Bathroom and kitchen tiling</li>
+                      <li className="mb-3"><i className="bi bi-square me-2" style={{ color: 'var(--theme-color)' }}></i>Floor and wall tile installations</li>
+                      <li className="mb-3"><i className="bi bi-square me-2" style={{ color: 'var(--theme-color)' }}></i>Outdoor patio and pool tiling</li>
+                      <li className="mb-3"><i className="bi bi-square me-2" style={{ color: 'var(--theme-color)' }}></i>Surface preparation and waterproofing</li>
+                      <li className="mb-3"><i className="bi bi-square me-2" style={{ color: 'var(--theme-color)' }}></i>Custom mosaic and feature designs</li>
                     </ul>
                   </div>
                 </div>
@@ -128,7 +128,7 @@ const ServiceDetailsTiling = () => {
           </div>
 
           <div className="col-lg-4 col-md-12 mt-30 mt-lg-0">
-            <CategoriesWidget />
+            <CategoriesWidget service="tiling"/>
             <CTABlock />
           </div>
         </div>

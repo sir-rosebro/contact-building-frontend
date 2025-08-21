@@ -7,7 +7,7 @@ import './quote-section.css';
 
 const QuoteSection = ({ service, area }) => {
   const displayService = service.charAt(0).toUpperCase() + service.slice(1).replace('-', ' ');
-  const displayArea = area.replace('-', ' ').split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  const displayArea = area ? area.replace('-', ' ').split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') : "";
 
   const subSuburbs = ['Newtown', 'Marrickville', 'Ashfield', 'Summer Hill', 'Leichhardt', 'Dulwich Hill'];
 
@@ -17,7 +17,7 @@ const QuoteSection = ({ service, area }) => {
         <div className="justify-content-center">
           <div className="text-left">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-ebony mb-6 leading-tight tracking-tight">
-              Get a Free Quote for Professional {displayService} Services in {displayArea}, Sydney
+              Get a Free Quote for Professional {displayService} Services in {displayArea ? `${displayArea}, Sydney` : "Sydney"}
             </h2>
             
             <p className="lead text-lg md:text-xl text-silver my-4">

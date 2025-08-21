@@ -5,30 +5,35 @@
             "id": 1,
             "title": "Waterproofing",
             "icon": "bi bi-chevron-right",
+            "link": "waterproofing",
             "categoriesLink": "service-details"
         },
         {
             "id": 2,
             "title": "Kitchen and Bathroom Renovations",
             "icon": "bi bi-chevron-right",
+            "link": "renovation",
             "categoriesLink": "service-details"
         },
         {
             "id": 3,
             "title": "Painting",
             "icon": "bi bi-chevron-right",
+            "link": "painting",
             "categoriesLink": "service-details"
         },
         {
             "id": 4,
             "title": "General Fixes",
             "icon": "bi bi-chevron-right",
+            "link": "general-fixes",
             "categoriesLink": "service-details"
         },
         {
             "id": 5,
             "title": "Tiling",
             "icon": "bi bi-chevron-right",
+            "link": "tiling",
             "categoriesLink": "service-details"
         }
     ]

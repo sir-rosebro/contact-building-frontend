@@ -11,25 +11,25 @@
             "id": 2,
             "serviceText": "Waterproofing",
             "icon": "bi bi-chevron-double-right",
-            "link": "waterproofing"
+            "link": "/service/waterproofing"
         },
         {
             "id": 3,
             "serviceText": "Painting",
             "icon": "bi bi-chevron-double-right",
-            "link": "painting"
+            "link": "/service/painting"
         },
         {
             "id": 4,
             "serviceText": "General Fixes",
             "icon": "bi bi-chevron-double-right",
-            "link": "general-fixes"
+            "link": "/service/general-fixes"
         },
         {
             "id": 5,
             "serviceText": "Tiling",
             "icon": "bi bi-chevron-double-right",
-            "link": "tiling"
+            "link": "/service/tiling"
         }
     ]
 }

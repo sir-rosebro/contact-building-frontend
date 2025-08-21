@@ -17,7 +17,7 @@ import { notFound } from 'next/navigation';
 import CTABlock from '../service/CTABlock';
 import CostEstimationWidgetPrompt from '../service/CostEstimationWidgetPrompt';
 
-const BlogDetailsContent = async ({ blogInfo }) => {
+const BlogDetailsContent = async ({ blogInfo, nextArticle, previousArticle }) => {
  
   const {
     title = 'Untitled',
@@ -241,13 +241,13 @@ const BlogDetailsContent = async ({ blogInfo }) => {
                   <div className="col-lg-6 col-md-6">
                     <div className="blog-details-tag">
                       <Link href="#" onClick={handleSmoothScroll}>
-                        Horse
+                        Waterproofing
                       </Link>
                       <Link href="#" onClick={handleSmoothScroll}>
-                        Business
+                        Tiling
                       </Link>
                       <Link href="#" onClick={handleSmoothScroll}>
-                        Breeding
+                        Gneral Fixes
                       </Link>
                     </div>
                   </div>
@@ -257,7 +257,7 @@ const BlogDetailsContent = async ({ blogInfo }) => {
                     </div>
                   </div>
                 </div>
-                <BlogSlider />
+                <BlogSlider nextArticle={nextArticle} previousArticle={previousArticle} />
               </div>
             </div>
             <div className="col-lg-4 col-md-12">

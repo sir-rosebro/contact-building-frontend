@@ -24,16 +24,16 @@ export default function WaterproofingHero() {
       <div className="container mt-5">
         <div className="row align-items-center justify-content-between">
           <div className="col-md-5 order-md-1">
-            <h1 className="display-5 fw-bold text-dark m-3">
+            <h1 className="display-5 fw-bold text-dark my-3">
               Welcome to Contact Building Service!
             </h1>
             <p className="lead text-muted">
-              For over 15 years, we have been providing top-quality handyman services to the residents of Sydney. Our small but dedicated team of skilled professionals is committed to delivering exceptional workmanship and unparalleled customer service.
+              For over 15 years, we have been providing top-quality handyman services to the residents of Sydney. Our small but dedicated team of skilled professionals 
+              is committed to delivering exceptional workmanship and unparalleled customer service.
             </p>
 
-            <div className="row mb-3 theme-background">
-
-              <div className="col-2 text-center d-flex justify-content-center align-items-center">
+            <div className="row mb-3 theme-background shadow">
+              <div className="col-2 text-center d-flex justify-content-center align-items-center p-0">
                 <div className='rounded-orange'>
                   <Image className="orangeMask" src={professionalIcon} height={50} width={50} alt="professsional icon" />
                 </div>
@@ -46,8 +46,8 @@ export default function WaterproofingHero() {
               </div>
             </div>
 
-            <div className="row mb-3 theme-background">
-              <div className="col-2 text-center d-flex justify-content-center align-items-center">
+            <div className="row mb-3 theme-background shadow">
+              <div className="col-2 text-center d-flex justify-content-center align-items-center p-0">
               <div className='rounded-orange'>
               <Image className='orangeMask' src={trustIcon} height={50} width={50} alt="professsional icon" />
               </div>
@@ -61,9 +61,9 @@ export default function WaterproofingHero() {
               </div>
             </div>
 
-            <div className="row mb-3 theme-background">
+            <div className="row mb-3 theme-background shadow">
               {/* Icon Column */}
-              <div className="col-2 text-center d-flex justify-content-center align-items-center">
+              <div className="col-2 text-center d-flex justify-content-center align-items-center p-0">
               <div className='rounded-orange'>
                 <Image className='orangeMask' src={qualityIcon} height={50} width={50} alt="professsional icon" />
                 </div>
@@ -77,9 +77,9 @@ export default function WaterproofingHero() {
               </div>
             </div>
 
-            <div className="row mb-3 theme-background">
+            <div className="row mb-3 theme-background shadow">
               {/* Icon Column */}
-              <div className="col-2 text-center d-flex justify-content-center align-items-center">
+              <div className="col-2 text-center d-flex justify-content-center align-items-center p-0">
               <div className='rounded-orange'>
               <Image className='orangeMask' src={affordableIcon} height={50} width={50} alt="professsional icon" />
               </div>
@@ -121,7 +121,7 @@ export default function WaterproofingHero() {
               <div
                 className="text-white d-flex"
                 style={{
-                  background: 'var(--theme-color);',  // Dark orange color
+                  background: 'var(--theme-color)',  // Dark orange color
                   padding: '1rem 2rem',
                   borderRadius: '3rem',
                   transform: 'translateY(-50%)',
@@ -146,54 +146,58 @@ export default function WaterproofingHero() {
           </div>
         </div>
       </div>
-      <section className={`container my-5 visionMission`}>
-      <div className="row g-4 align-items-center" style={{ marginBlock: '10rem' }}>
+      <section className="visionMission my-5">
+        <div className="container">
+          <div className="row g-4 align-items-center" style={{ marginBlock: '10rem' }}>
 
-        <div className={`col-lg-6 imageContainer`}>
-        <div className="imageWrapper">
-     
+            <div className={`col-lg-6 imageContainer`}>
+            <div className="imageWrapper">
+        
 
-      <div className="imageEightyPercent">
-        <Image
-          src={paintingBucketImg}
-          alt="Handyman repairing a wall"
-          fill
-          className="image"
-        />
-      </div>
+          <div className="imageEightyPercent">
+            <Image
+              src={paintingBucketImg}
+              alt="Handyman repairing a wall"
+              fill
+              className="image"
+            />
+          </div>
 
-      <div className="imageFullHeight">
-        <Image
-          src={renovationImg}
-          alt="Handyman fixing a kitchen sink"
-          fill
-          className="image"
-        />
-      </div>
-    </div>
-
+          <div className="imageFullHeight">
+            <Image
+              src={renovationImg}
+              alt="Handyman fixing a kitchen sink"
+              fill
+              className="image"
+            />
+          </div>
         </div>
-        <div className="col-lg-6">
-          <div className={`mb-4`}>
-            <div>
-              <div className="d-flex align-items-center mb-3">
-                <h2>Vision and Mission</h2>
+
+            </div>
+            <div className="col-lg-6">
+              <div className={`mb-4`}>
+                <div>
+                  <div className="d-flex align-items-center mb-3">
+                    <h2>Vision and Mission</h2>
+                  </div>
+                  <p className='text-highlight'>
+                  <span>Contact Building Services</span> is your expert handyman mate, forever committed to supporting our customers and communities in crafting exceptional 
+                  homes.
+                  </p>
+                  <p className="card-text">
+                    At Contact, our vision is to redefine home repair excellence in Sydney, transforming spaces with unmatched craftsmanship. Our mission is to deliver
+                    exceptional handyman services with precision, care, and affordability, creating
+                    lasting value for every home we touch.
+                  </p>
+                </div>
               </div>
-              <p className='text-highlight'>
-              <span>Contact Building Services</span> is your expert handyman mate, forever committed to supporting our customers and communities in crafting exceptional 
-              homes.
-              </p>
-              <p className="card-text">
-                At Contact, our vision is to redefine home repair excellence in Sydney, transforming spaces with unmatched craftsmanship. Our mission is to deliver
-                exceptional handyman services with precision, care, and affordability, creating
-                lasting value for every home we touch.
-              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-      <section className="container position-relative py-5 diagonal-split">
+      </section>
+
+
+      <section className="shadow container position-relative py-5 diagonal-split">
       <div className=" position-relative">
         <div className="row align-items-center justify-content-between">
 
@@ -229,7 +233,7 @@ export default function WaterproofingHero() {
                       backgroundColor: '#ffe5cc',
                       width: '28px',
                       height: '28px',
-                      color: 'var(--theme-color);',
+                      color: 'var(--theme-color)',
                       fontSize: '1rem'
                     }}
                   >
@@ -244,7 +248,7 @@ export default function WaterproofingHero() {
               href="/quote"
               className="btn text-white px-4 py-2"
               style={{
-                backgroundColor: 'var(--theme-color);',
+                backgroundColor: 'var(--theme-color)',
                 borderRadius: '2rem',
               }}
             >

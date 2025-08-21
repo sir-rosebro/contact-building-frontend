@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image'; 
 import FooterV1 from '@/src/components/footer/FooterV1';
 import Hero from '@/src/components/Hero/Hero';
 import CostEstimationWidgetPrompt from '@/src/components/service/CostEstimationWidgetPrompt';
@@ -8,6 +9,7 @@ import { getServiceContent, getSuburbBlurb, suburbs } from '@/src/lib/data';
 import NotFound from '../../not-found';
 import styles from './style.module.css';
 import SuburbMap from '@/src/components/SuburbMap'; // Assume this is created as 'use client'
+import QuoteSection from '@/src/components/QuoteSection';
 
 const areas = [
   { name: 'sydney-cbd', desc: 'Painting services in the heart of Sydney, designed for apartments, townhouses, and commercial buildings.', lat: -33.8688, lng: 151.2093 },
@@ -28,21 +30,36 @@ const areas = [
 ];
 
 export async function generateStaticParams() {
-  return ['painting', 'general-fixes', 'tiling', 'waterproofing'].map((service) => ({ service }));
+  return ['painting', 'general-fixes', 'tiling', 'waterproofing', 'bathroom-renovations', 'kitchen-renovations'].map((service) => ({ service }));
 }
 
 export const metadata = {
   title: 'Painting Areas - Contact Building Services',
 };
 
+  // Define images for painting categories (interior, exterior, commercial, etc.). Use actual Strapi URLs or placeholders.
+  const serviceImages = {
+    'Interior Painting': 'https://funny-virtue-0648592741.media.strapiapp.com/interior_painting_edaae691d1.jpg',
+    'Exterior Painting': 'https://funny-virtue-0648592741.media.strapiapp.com/exterior_painting_6c475253fe.jpg',
+    'Commercial Painting': 'https://funny-virtue-0648592741.media.strapiapp.com/commercial_painting_4339a4d7a4.jpg',
+    // Add more categories as needed, e.g., 'Strata Painting', 'Roof Painting', etc.
+    // For non-painting services, you can extend this object or handle conditionally based on 'service'
+  };
+
 const ServiceAreas = ({ params = {} }) => {
   const { service } = params;
+  const displayArea = "Sydney"; // Default area for painting services
   const content = getServiceContent(service);
-  const displayService = service.charAt(0).toUpperCase() + service.slice(1).replace('-', ' ');
+  const displayService = service.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  const serviceLower = service.split('-').join(' ');
 
   if (!content.title) {
     return <NotFound />;
   }
+
+  const capitalizeSuburb = (name) => {
+    return name.replace('-', ' ').split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  };
 
   const getServiceIcon = (serviceItem) => {
     if (serviceItem.includes('Painting')) return 'bi-brush-fill';
@@ -52,20 +69,33 @@ const ServiceAreas = ({ params = {} }) => {
     return 'bi-gear-fill';
   };
 
-  const capitalizeSuburb = (name) => {
-    return name.replace('-', ' ').split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-  };
+  const areasWithDesc = areas.map(area => ({
+    ...area,
+    desc: area.desc.replace(/Painting/g, displayService).replace(/painting/g, serviceLower)
+  }));
+
+  const introTemplate = `At Contact Building Services, we offer high-quality ${serviceLower} services in Sydney CBD, revitalizing homes, multi-story apartments, traditional buildings, and commercial spaces with fresh, durable finishes. Our experienced team applies top-quality materials and proven methods suited for urban architectures and busy city lifestyles. Whether you need interior updates, exterior protections, or full property makeovers, we're committed to delivering long-lasting results that enhance aesthetics and protection year-round.`;
+
+  const whyChooseItems = [
+    `CBD Experts: Apartment, commercial, and strata ${serviceLower}.`,
+    `Covering Sydney: Sydney City, Surry Hills, Pyrmont, Darlinghurst, and beyond.`,
+    `Certified Professionals: Over 15 years of ${serviceLower} expertise.`,
+    `Premium Materials: High-quality, durable products.`,
+    `Cost-Effective Pricing: Competitive rates with free consultations.`,
+    `Guaranteed Work: Industry-leading warranties.`,
+    `Free On-Site Estimate: Tailored quotes for your project.`,
+  ];
 
   return (
     <>
       <Head>
         <meta
           name="description"
-          content="Expert painting services in Sydney CBD, Hills District, Inner West, Randwick, Northern Beaches, and more. High-quality solutions by Contact Building Services with 15+ years of experience. Free quote: [Your Phone Number]."
+          content={`Expert ${serviceLower} services in Sydney CBD, Hills District, Inner West, Randwick, Northern Beaches, and more. High-quality solutions by Contact Building Services with 15+ years of experience. Free quote: [Your Phone Number].`}
         />
         <meta
           name="keywords"
-          content="painting services Sydney, painting Sydney CBD, painting Hills District, painting Surry Hills, painting Inner West, painting Northern Beaches"
+          content={`${serviceLower} services Sydney, ${serviceLower} Sydney CBD, ${serviceLower} Hills District, ${serviceLower} Surry Hills, ${serviceLower} Inner West, ${serviceLower} Northern Beaches`}
         />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -86,11 +116,11 @@ const ServiceAreas = ({ params = {} }) => {
             'telephone': '[Your Phone Number]',
             'email': 'info@contactbuildingservices.com.au',
             'openingHours': 'Mo-Sa 08:00-18:00',
-            'description': 'Professional painting services for homes and businesses across Sydney, backed by over 15 years of experience.',
+            'description': `Professional ${serviceLower} services for homes and businesses across Sydney, backed by over 15 years of experience.`,
             'service': {
               '@type': 'Service',
-              'serviceType': 'Painting',
-              'description': 'Expert painting for homes, apartments, and commercial properties across Sydney suburbs.',
+              'serviceType': displayService,
+              'description': `Expert ${serviceLower} for homes, apartments, and commercial properties across Sydney suburbs.`,
               'areaServed': areas.map((area) => ({ '@type': 'Place', 'name': capitalizeSuburb(area.name) })),
             },
           })}
@@ -102,15 +132,15 @@ const ServiceAreas = ({ params = {} }) => {
             'mainEntity': [
               {
                 '@type': 'Question',
-                'name': 'How long does painting last in Sydney?',
+                'name': `How long does ${serviceLower} last in Sydney?`,
                 'acceptedAnswer': {
                   '@type': 'Answer',
-                  'text': 'Our painting services use premium paints suited for Sydney’s climate, ensuring vibrant finishes last 7–10 years.',
+                  'text': `Our ${serviceLower} services use premium materials suited for Sydney’s climate, ensuring vibrant finishes last 7–10 years.`,
                 },
               },
               {
                 '@type': 'Question',
-                'name': 'What’s the cost of painting in Sydney CBD?',
+                'name': `What’s the cost of ${serviceLower} in Sydney CBD?`,
                 'acceptedAnswer': {
                   '@type': 'Answer',
                   'text': 'Costs vary by project size and scope. Contact us for a free, tailored quote for your Sydney CBD property.',
@@ -118,10 +148,10 @@ const ServiceAreas = ({ params = {} }) => {
               },
               {
                 '@type': 'Question',
-                'name': 'Do you offer warranties on painting services?',
+                'name': `Do you offer warranties on ${serviceLower} services?`,
                 'acceptedAnswer': {
                   '@type': 'Answer',
-                  'text': 'Yes, we provide industry-leading warranties for all painting projects across Sydney.',
+                  'text': `Yes, we provide industry-leading warranties for all ${serviceLower} projects across Sydney.`,
                 },
               },
             ],
@@ -130,8 +160,8 @@ const ServiceAreas = ({ params = {} }) => {
       </Head>
 
       <Hero
-        page="Painting Areas in Sydney"
-        description="Expert painting services across all Sydney suburbs. Transform your property with Contact Building Services, backed by 15+ years of experience."
+        page={`${displayService} Areas in Sydney`}
+        description={`Expert ${serviceLower} services across all Sydney suburbs. Transform your property with Contact Building Services, backed by 15+ years of experience.`}
       />
 
       <div className={styles.container}>
@@ -144,7 +174,7 @@ const ServiceAreas = ({ params = {} }) => {
               <ul className={styles.sidebarList}>
                 {areas.map((area, idx) => (
                   <li key={idx} className={styles.sidebarItem}>
-                    <Link href={`/area-we-serve/painting/${area.name}`} className={styles.sidebarLink}>
+                    <Link href={`/area-we-serve/${service}/${area.name}`} className={styles.sidebarLink}>
                       <i className={`bi bi-geo-alt-fill ${styles.sidebarIcon}`}></i>
                       <span className={styles.sidebarText}>{capitalizeSuburb(area.name)}</span>
                     </Link>
@@ -155,68 +185,92 @@ const ServiceAreas = ({ params = {} }) => {
           </div>
           <div className={styles.mainContent + " col-md-9"}>
             <section className={styles.section}>
-              <div className={styles.headerWrapper}>
-                <h2 className={styles.heading}>Contact Building Services – Expert Painting Services in Sydney</h2>
-                <p className={styles.subheading}>Your Reliable Painting Professionals in Sydney City & Nearby Regions</p>
+              <div className="service-details-thumb mb-5">
+                    <Image
+                      src="https://funny-virtue-0648592741.media.strapiapp.com/4426_07f09425d1.jpg"
+                      alt="House and commercial painting in Sydney by Contact Building Services"
+                      className="img-fluid rounded shadow-sm"
+                      height={500}
+                      width={1000}
+                      priority
+                    />
+                  </div>
+                  <div className={styles.headerWrapper}>
+                <h2 className={styles.heading}>Contact Building Services – Expert {displayService} Services in {displayArea}</h2>
+                <p className={`${styles.subheading} lead`}>Your Reliable {displayService} Professionals in {displayArea} & Nearby Regions</p>
                 <p className={styles.intro}>
-                  At Contact Building Services, we offer high-quality painting services in Sydney CBD, revitalizing homes, multi-story apartments, traditional buildings, and commercial spaces with fresh, durable finishes. Our experienced team applies top-quality paints and proven methods suited for urban architectures and busy city lifestyles. Whether you need interior wall refreshing, exterior weatherproofing, or full property makeovers, we`@apos`re committed to delivering vibrant, long-lasting results that enhance aesthetics and protection year-round.
+                  {introTemplate}
                 </p>
-                {/* <div className={styles.ctaWrapper}>
-                  <Link href="tel:[Your Phone Number]" className={styles.ctaButton}>Call Now: [Your Phone Number]</Link>
-                  <Link href="#quote-form" className={styles.ctaButtonSecondary}>Request Free Quote</Link>
-                </div> */}
               </div>
             </section>
 
             <section className={styles.section}>
               <div className={styles.headerWrapper}>
-                <h2 className={styles.heading}>Our Painting Services in Sydney</h2>
-                <p className={styles.intro}>{content.intro}</p>
+                <h2 className={styles.heading}>Our {displayService} Services in Sydney</h2>
+                <p className={`${styles.subheading} lead`}>{content.intro}</p>
               </div>
               <div className={styles.grid}>
-                {content.servicesList.map((item, idx) => (
-                  <div className={styles.card} key={idx}>
-                    <i className={`bi ${getServiceIcon(item)} ${styles.icon}`} />
-                    <h5 className={styles.cardTitle}>{item.split(':')[0]}</h5>
-                    <p className={styles.cardText}>{item.split(':')[1]}</p>
-                  </div>
-                ))}
+              {content.servicesList.map((item, idx) => {
+                  const title = item.split(':')[0].trim();
+                  const desc = item.split(':')[1]?.trim() || '';
+                  const imageSrc = serviceImages[title] || 'https://funny-virtue-0648592741.media.strapiapp.com/placeholder_service.jpg'; // Fallback image
+                  return (
+                    <div className={styles.card} key={idx}>
+                      <div className={styles.cardImageWrapper}>
+                        <Image
+                          src={imageSrc}
+                          alt={title}
+                          width={400}
+                          height={250}
+                          className={styles.cardImage}
+                          priority={idx < 3}
+                        />
+                        <div className={styles.cardOverlay}>
+                          <i className={`bi ${getServiceIcon(item)} ${styles.iconOverlay}`} />
+                        </div>
+                        <div className={styles.numberedTitle}>
+                          {`${idx + 1}. ${title}`}
+                        </div>
+                      </div>
+                      <div className={styles.cardContent}>
+                        <p className={styles.cardText}>{desc}</p>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </section>
 
             <section className={styles.section}>
               <div className={styles.headerWrapper}>
                 <h2 className={styles.heading}>Why Choose Contact Building Services?</h2>
-                <p className={styles.intro}>{content.whyChoose}</p>
+                <p className={`${styles.subheading} lead`}>{content.whyChoose}</p>
               </div>
               <div className={styles.whyChooseList}>
                 <ul className={styles.list}>
-                  <li className={styles.listItem}><i className={`bi bi-check-circle-fill ${styles.listIcon}`} />CBD Experts: Apartment, commercial, and strata painting.</li>
-                  <li className={styles.listItem}><i className={`bi bi-check-circle-fill ${styles.listIcon}`} />Covering Sydney: Sydney City, Surry Hills, Pyrmont, Darlinghurst, and beyond.</li>
-                  <li className={styles.listItem}><i className={`bi bi-check-circle-fill ${styles.listIcon}`} />Certified Professionals: Over 15 years of painting expertise.</li>
-                  <li className={styles.listItem}><i className={`bi bi-check-circle-fill ${styles.listIcon}`} />Premium Paints: High-quality, durable coatings.</li>
-                  <li className={styles.listItem}><i className={`bi bi-check-circle-fill ${styles.listIcon}`} />Cost-Effective Pricing: Competitive rates with free consultations.</li>
-                  <li className={styles.listItem}><i className={`bi bi-check-circle-fill ${styles.listIcon}`} />Guaranteed Finishes: Industry-leading warranties.</li>
-                  <li className={styles.listItem}><i className={`bi bi-check-circle-fill ${styles.listIcon}`} />Free On-Site Estimate: Tailored quotes for your project.</li>
+                  {whyChooseItems.map((item, idx) => (
+                    <li key={idx} className={styles.listItem}><i className={`bi bi-check-circle-fill ${styles.listIcon}`} />{item}</li>
+                  ))}
                 </ul>
               </div>
+              <QuoteSection service={service}/>
             </section>
 
             <section className={styles.section}>
               <div className={styles.headerWrapper}>
-                <h2 className={styles.heading}>Areas We Serve for Painting</h2>
-                <p className={styles.intro}>
-                  Contact Building Services delivers expert painting across Sydney, from urban apartments in Sydney CBD to coastal homes in Northern Beaches, with 15+ years of craftsmanship.
+                <h2 className={styles.heading}>Areas We Serve for {displayService} service</h2>
+                <p className={`${styles.subheading} lead`}>
+                  Contact Building Services delivers expert {displayService} service across Sydney, from urban apartments in Sydney CBD to coastal homes in Northern Beaches, with 15+ years of craftsmanship.
                 </p>
               </div>
               <div className={styles.grid}>
-                {areas.map((area, idx) => (
+                {areasWithDesc.map((area, idx) => (
                   <div className={styles.card} key={idx}>
                     <SuburbMap lat={area.lat} lng={area.lng} name={capitalizeSuburb(area.name)} />
                     <div className='p-2'>
                       <h5 className={styles.cardTitle}>{capitalizeSuburb(area.name)}</h5>
                       <p className={styles.cardText}>{area.desc}</p>
-                      <Link href={`/area-we-serve/painting/${area.name}`} className={styles.moreDetails}>More Details</Link>
+                      <Link href={`/area-we-serve/${service}/${area.name}`} className={styles.moreDetails}>More Details</Link>
                     </div>
                   </div>
                 ))}

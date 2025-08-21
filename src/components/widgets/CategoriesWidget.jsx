@@ -3,7 +3,7 @@ import CategoriesWidgetData from '../../../public/assets/jsonData/widgets/Catego
 import Link from 'next/link';
 import handlePreventClick from '../click/handlePreventClick';
 
-const CategoriesWidget = () => {
+const CategoriesWidget = ({ service }) => {
     return (
         <>
             <div className="widget-categories-box">
@@ -13,7 +13,9 @@ const CategoriesWidget = () => {
                 <div className="widget-categories-menu">
                     <ul>
                         {CategoriesWidgetData.categoriesData.map(category =>
-                            <li key={category.id}><Link href={{ javascript: void (0) }} onClick={handlePreventClick}>{category.title}</Link></li>
+                            <li key={category.id} className={ service === category.link ? "active" : "" }>
+                                <Link href={`/service/${category.link}`} >{category.title}</Link>
+                            </li>
                         )}
                     </ul>
                 </div>

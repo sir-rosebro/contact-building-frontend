@@ -1399,7 +1399,6 @@
 
     .row.contact {
         padding: 72px 20px 87px;
-        margin-top: -130px;
     }
 
     /* pricing area inner page */
@@ -1415,6 +1414,9 @@
         background-color: #000000;
     }
 
+    .rounded-orange {
+        padding: 8px;
+    }
 
     .slider-area {
         height: 50rem;
@@ -2077,10 +2079,6 @@
         margin-right: 0;
     }
 
-    .blog-item-content h4 a {
-        font-size: 20px;
-    }
-
     .owl-nav {
         display: none;
     }
@@ -2159,7 +2157,6 @@
 
     .row.contact {
         padding: 72px 20px 87px;
-        margin-top: -130px;
     }
 
     .contact-title h2 {
@@ -2829,10 +2826,6 @@
         margin-right: 0;
     }
 
-    .blog-item-content h4 a {
-        font-size: 20px;
-    }
-
     .owl-nav {
         display: none;
     }
@@ -2925,7 +2918,6 @@
 
     .row.contact {
         padding: 72px 20px 87px;
-        margin-top: -130px;
     }
 
     .contact-title h2 {
@@ -3767,10 +3759,6 @@
         margin-right: 0;
     }
 
-    .blog-item-content h4 a {
-        font-size: 20px;
-    }
-
     .owl-nav {
         display: none;
     }
@@ -3909,7 +3897,6 @@
 
     .row.contact {
         padding: 72px 10px 87px;
-        margin-top: -130px;
     }
 
     .contact-title {

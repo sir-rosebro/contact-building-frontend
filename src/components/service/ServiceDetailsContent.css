@@ -3,7 +3,7 @@
     .sidebar-contact-widget {
       position: sticky;
       top: 10px;
-      background: #fff9f2;
+      background: linear-gradient(180deg, #ffffff 0%, #f9e7e4 100%);
       padding: 1.5rem;
       /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); */
       z-index: 10;

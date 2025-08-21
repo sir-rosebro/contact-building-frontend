@@ -3,6 +3,7 @@ export const services = [
   "general-fixes",
   "tiling",
   "waterproofing",
+  "renovations"
 ];
 export const suburbs = [
   "sydney-cbd",
@@ -74,11 +75,24 @@ export const getServiceContent = (service) => {
         heroTitle: "Expert Waterproofing in Sydney",
         servicesList: [
           "Bathroom & Shower Waterproofing: Prevent leaks in wet areas with high-quality membranes. Our solutions ensure long-term protection against water damage and mold growth in humid environments.",
-          "Balcony & Terrace: Durable protection for outdoor spaces against rain and weathering. We apply weather-resistant sealants to safeguard your balconies from water ingress and structural damage.",
-          "Basement & Roof: Guard against rain and groundwater with comprehensive sealing. Our basement and roof waterproofing prevents flooding and extends the life of your property&apos;s foundation.",
+          "Balcony & Terrace Waterproofing: Durable protection for outdoor spaces against rain and weathering. We apply weather-resistant sealants to safeguard your balconies from water ingress and structural damage.",
+          "Basement & Roof Waterproofing: Guard against rain and groundwater with comprehensive sealing. Our basement and roof waterproofing prevents flooding and extends the life of your property&apos;s foundation.",
         ],
         whyChoose:
           "Certified specialists, premium materials, and 15+ years of reliable service.",
+      };
+    case "renovations":
+      return {
+        title: "Renovations Services in Sydney | Bathroom & Kitchen Specialists",
+        intro:
+          "Elevate your home with our specialized renovation services across Sydney suburbs. We focus exclusively on bathroom and kitchen renovations for residential properties, delivering modern, functional transformations using quality materials.",
+        heroTitle: "Expert Bathroom & Kitchen Renovations in Sydney",
+        servicesList: [
+          "Bathroom Renovations: Complete makeovers for modern, spa-like retreats. We handle everything from layout design to fixture installation, creating waterproof, stylish bathrooms tailored to your needs.",
+          "Kitchen Renovations: Functional upgrades for contemporary cooking spaces. Our kitchen renovations optimize workflow with custom cabinetry, countertops, and appliances for efficient, beautiful results.",
+        ],
+        whyChoose:
+          "Specialized renovators with premium materials and 15+ years of trusted service in Sydney.",
       };
     default:
       return {};
@@ -96,6 +110,8 @@ export const getSuburbBlurb = (service, suburb) => {
       return `Precision tiling services in ${displaySuburb}, ideal for modern bathrooms, kitchens, and outdoor spaces by Contact Building Services.`;
     case 'waterproofing':
       return `Reliable waterproofing in ${displaySuburb}, protecting properties from leaks and moisture in Sydney’s climate with our expert team.`;
+    case 'renovations':
+      return `Bathroom and kitchen renovations in ${displaySuburb}, transforming spaces with modern designs by Contact Building Services.`;
     default:
       return '';
   }

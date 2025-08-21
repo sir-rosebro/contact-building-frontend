@@ -61,11 +61,11 @@ const ServiceDetailsKitchen = () => {
                       Our Sydney-based team handles everything from 3D design and layout planning to cabinetry, benchtops, and electricals. With quality Australian materials and certified trades, we guarantee a stress-free kitchen upgrade experience.
                     </p>
                     <ul className="list-unstyled service-list">
-                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Custom cabinetry and storage solutions</li>
-                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Modern benchtops and splashbacks</li>
-                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Lighting and electrical upgrades</li>
-                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Plumbing, tiling, and appliance installation</li>
-                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color);' }}></i>Full kitchen redesign and project management</li>
+                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color)' }}></i>Custom cabinetry and storage solutions</li>
+                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color)' }}></i>Modern benchtops and splashbacks</li>
+                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color)' }}></i>Lighting and electrical upgrades</li>
+                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color)' }}></i>Plumbing, tiling, and appliance installation</li>
+                      <li className="mb-3"><i className="bi bi-droplet me-2" style={{ color: 'var(--theme-color)' }}></i>Full kitchen redesign and project management</li>
                     </ul>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ const ServiceDetailsKitchen = () => {
           </div>
 
           <div className="col-lg-4 col-md-12 mt-30 mt-lg-0">
-            <CategoriesWidget />
+            <CategoriesWidget service="renovation"/>
             <CTABlock />
           </div>
         </div>
