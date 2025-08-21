@@ -61,11 +61,11 @@ const ServiceDetailsHandyman = () => {
                       Whether it’s patching a hole, fixing hinges, regrouting tiles, or mounting TVs, we provide fast, friendly, and professional service at a fair price — with no job too small.
                     </p>
                     <ul className="list-unstyled service-list">
-                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color);' }}></i>Wall patching and plaster repairs</li>
-                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color);' }}></i>Leaking tap and pipe fixes</li>
-                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color);' }}></i>Furniture and flat-pack assembly</li>
-                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color);' }}></i>TV and shelf mounting</li>
-                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color);' }}></i>Door adjustments, locks, and handles</li>
+                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color)' }}></i>Wall patching and plaster repairs</li>
+                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color)' }}></i>Leaking tap and pipe fixes</li>
+                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color)' }}></i>Furniture and flat-pack assembly</li>
+                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color)' }}></i>TV and shelf mounting</li>
+                      <li className="mb-3"><i className="bi bi-wrench-adjustable me-2" style={{ color: 'var(--theme-color)' }}></i>Door adjustments, locks, and handles</li>
                     </ul>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ const ServiceDetailsHandyman = () => {
           </div>
 
           <div className="col-lg-4 col-md-12 mt-30 mt-lg-0">
-            <CategoriesWidget />
+            <CategoriesWidget service="general-fixes"/>
             <CTABlock />
           </div>
         </div>

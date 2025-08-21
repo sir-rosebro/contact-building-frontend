@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import SingleBlogSlider from './SingleBlogSlider';
 import Slider from 'react-slick';
 
-const BlogSlider = () => {
+const BlogSlider = ({ nextArticle, previousArticle }) => {
 
     const [slider, setSlider] = useState(null);
 
@@ -30,14 +30,14 @@ const BlogSlider = () => {
             <div className="row mt-40 ">
                 <div className="blog_list-two position-relative">
                     <Slider {...settings} ref={setSlider}>
-                        <SingleBlogSlider />
-                        <SingleBlogSlider />
+                        <SingleBlogSlider nextArticle={nextArticle} previousArticle={previousArticle} />
+                        <SingleBlogSlider nextArticle={nextArticle} previousArticle={previousArticle} reversePosition/>
                     </Slider>
                     <div className="blog-slider-nav">
-                        <button className="nav-prev" onClick={handlePrevious}>
-                            <i className="bi bi-chevron-left"></i> Previous</button>
-                        <button className="nav-next" onClick={handleNext}>
-                            Next <i className="bi bi-chevron-right"></i>
+                        <button className="nav-prev shadow" onClick={handlePrevious}>
+                            <i className="bi bi-chevron-left"></i> </button>
+                        <button className="nav-next shadow" onClick={handleNext}>
+                            <i className="bi bi-chevron-right"></i>
                         </button>
                     </div>
                 </div>

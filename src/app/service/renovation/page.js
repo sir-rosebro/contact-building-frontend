@@ -8,30 +8,50 @@ import RenovationDetailsContent from '../../../components/service/RenovationDeta
 import Hero from '@/src/components/Hero/Hero';
 import CostEstimationWidgetPrompt from '@/src/components/service/CostEstimationWidgetPrompt';
 
-export const metadata = {
-    title: "Service Details - Euildint Construction Building NextJS Template"
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  const data = ServiceV3Data.serviceData.find(service => service.slug === slug);
+
+  if (!data) {
+    return {
+      title: 'Not Found - Euildint Construction Building NextJS Template',
+    };
+  }
+
+  return {
+    title: `${data.title} - Euildint Construction Building NextJS Template`,
+  };
+}
+
+
+export async function generateStaticParams() {
+  return ServiceV3Data.serviceData.map(service => ({
+    slug: service.slug,
+  }));
 }
 
 const SingleService = ({ params = {} }) => {
+  const { slug } = params;
+  console.log("Service Slug:", slug);
 
-    const { id } = params
-    const data = ServiceV3Data.serviceData.filter(service => service.id === parseInt(id))[0]
+  // Filter data by slug (add 'slug' field to your JSON if not present, e.g., 'bathroom-renovation')
+  const data = ServiceV3Data.serviceData.find(service => service.slug === slug);
 
-    // if (!data) {
-    //     return NotFound();
-    // }
+  if (!data) {
+    return <NotFound />;
+  }
 
-    return (
-        <>
-            <Hero
-                page="Bathroom and Kitchen Renovation Services in Sydney"
-                description="Professional bathroom and kitchen renovation services in Sydney transform your home's essential spaces into modern, functional areas. From updating fixtures, tiling, and waterproofing in bathrooms to custom cabinetry, appliances, and layouts in kitchens, experienced renovators deliver high-quality, durable results tailored to your style and needs."
-            />
-            <RenovationDetailsContent serviceInfo={data} />
-            <CostEstimationWidgetPrompt />
-            <FooterV1 />
-        </>
-    );
+  return (
+    <>
+      <Hero
+        page={`${data.title} Services in Sydney`} // Dynamic based on data
+        description={`Professional ${data.title.toLowerCase()} services in Sydney transform your home's essential spaces into modern, functional areas. From updating fixtures, tiling, and waterproofing to custom cabinetry, appliances, and layouts, experienced renovators deliver high-quality, durable results tailored to your style and needs.`}
+      />
+      <RenovationDetailsContent serviceInfo={data} />
+      <CostEstimationWidgetPrompt />
+      <FooterV1 />
+    </>
+  );
 };
 
 export default SingleService;

@@ -81,7 +81,7 @@ function renderService(service, large = false) {
           overflow: "hidden",
         }}
       >
-        <div className="card-img-overlay d-grid p-4" style={{ background: "rgba(0,0,0,0.2)" }}>
+        <div className="card-img-overlay d-grid p-4">
           <div className="text-white">
             <h3 className="card-title fs-5 fw-bold mb-2" style={{ color: "var(--theme-color)" }}>
               {service.title}

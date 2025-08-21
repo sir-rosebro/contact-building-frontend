@@ -20,28 +20,28 @@ const ContactContent = () => {
                                 <h5 className="fw-bold mb-3">Why Choose Us?</h5>
                                 <ul className="list-unstyled">
                                     <li className="row mb-3 align-items-center">
-                                        <span className="col-lg-2 contact-icon-span">
+                                        <span className="col-2 contact-icon-span">
                                             <i className="bi bi-check"></i> 
                                         </span>
-                                        <p className='col-lg-10 lead text-muted mb-0'>Long-lasting waterproofing backed by warranty</p>
+                                        <p className='col-10 lead text-muted mb-0'>Long-lasting waterproofing backed by warranty</p>
                                     </li>
                                 <li className="row mb-3 align-items-center">
-                                    <span className="col-lg-2 contact-icon-span">
+                                    <span className="col-2 contact-icon-span">
                                         <i className="bi bi-check"></i> 
                                     </span>
-                                    <p className='col-lg-10 lead text-muted mb-0'>Affordable handyman services for homes & businesses</p>
+                                    <p className='col-10 lead text-muted mb-0'>Affordable handyman services for homes & businesses</p>
                                 </li>
                                 <li className="row mb-3 align-items-center">
-                                    <span className="col-lg-2 contact-icon-span">
+                                    <span className="col-2 contact-icon-span">
                                         <i className="bi bi-check"></i> 
                                     </span>
-                                    <p className='col-lg-10 lead text-muted mb-0'>Free site inspections and no-obligation quotes</p>
+                                    <p className='col-10 lead text-muted mb-0'>Free site inspections and no-obligation quotes</p>
                                 </li>
                                 <li className="row mb-3 align-items-center">
-                                     <span className="col-lg-2 contact-icon-span">
+                                     <span className="col-2 contact-icon-span">
                                         <i className="bi bi-check"></i> 
                                     </span>
-                                    <p className='col-lg-10 lead text-muted mb-0'>Emergency repairs available 24/7</p>
+                                    <p className='col-10 lead text-muted mb-0'>Emergency repairs available 24/7</p>
                                 </li>
                                 </ul>
                             </div>

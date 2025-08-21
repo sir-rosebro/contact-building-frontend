@@ -317,6 +317,16 @@
   overflow: hidden;
 }
 
+@media only screen and (max-width: 991px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 2rem;
+    box-shadow: none;
+  }
+}
+
 .sidebarInner {
   position: relative;
   z-index: 1;
@@ -434,4 +444,10 @@
   background: linear-gradient(to right, transparent, #fd6656, transparent);
   width: 20%;
   margin: 0 auto 2rem;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1rem;
 }

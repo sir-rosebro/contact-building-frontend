@@ -13,7 +13,7 @@ export const metadata = {
     title: "Blog Details - Euildint Construction Building NextJS Template"
 }
 
-async function fetchBlogBySlug(slug) {
+async function fetchCurrentArticle(slug) {
   if (!slug) {
     console.error('Error: No slug provided');
     return null;
@@ -48,7 +48,7 @@ async function fetchBlogBySlug(slug) {
   );
 
   const apiUrl = `https://funny-virtue-0648592741.strapiapp.com/api/articles?${query}`;
-  console.log('Strapi API URL:', apiUrl); // Debug: Log the URL
+  // console.log('Strapi API URL:', apiUrl); // Debug: Log the URL
 
   try {
     const res = await fetch(apiUrl, { cache: 'no-store' });
@@ -57,7 +57,7 @@ async function fetchBlogBySlug(slug) {
       return null;
     }
     const data = await res.json();
-    console.log('Strapi response:', JSON.stringify(data, null, 2)); // Debug: Log formatted response
+    console.log('Strapi response:', JSON.stringify(data, null, 2));                     
 
     if (!data.data || !Array.isArray(data.data) || data.data.length === 0) {
       console.error('No blog found for slug:', slug);
@@ -75,54 +75,88 @@ async function fetchBlogBySlug(slug) {
   }
 }
 
+async function fetchNextArticle(currentPublishedAt) {
+  const query = qs.stringify(
+    {
+      filters: {
+        publishedAt: {
+          $gt: currentPublishedAt,
+        },
+      },
+      sort: ['publishedAt:asc'],
+      pagination: {
+        limit: 1,
+      },
+      fields: ['title', 'slug'], // Only title and slug needed
+      populate: {
+        cover: {
+          fields: ['url', 'alternativeText'], // Thumbnail
+        },
+      },
+    },
+    { encodeValuesOnly: true }
+  );
 
-// async function fetchBlogBySlug(slug) {
-//     const query = qs.stringify(
-//         {
-//           filters: {
-//             slug: {
-//               $eq: slug,
-//             },
-//           },
-//           populate: {
-//             cover: {
-//               fields: ['url', 'alternativeText'],
-//             },
-//             author: {
-//               fields: ['name'],
-//             },
-//             category: {
-//               fields: ['name'],
-//             },
-//             blocks: {
-//               on: {
-//                 'shared.rich-text': { populate: '*' },
-//                 'shared.media': { populate: { file: true } },
-//               },
-//             },
-//           },
-//         },
-//         { encodeValuesOnly: true }
-//       );
-    
-    
-//     try {
-//       const res = await fetch(`https://funny-virtue-0648592741.strapiapp.com/api/articles?${query}`,
-//         { cache: 'no-store' }
-//       );
+  const apiUrl = `https://funny-virtue-0648592741.strapiapp.com/api/articles?${query}`;
+  const response = await fetch(apiUrl);
+  const data = await response.json();
+  return data.data[0] || null;
+}
 
-//       if (!res.ok) {
-//         console.error(`HTTP error! Status: ${res.status}`);
-//         return null;
-//       }
-//       const data = await res.json();
-//       console.log(data)
-//       return data.data;
-//     } catch (error) {
-//       console.error('Error fetching article:', error);
-//       return null;
-//     }
+async function fetchPreviousArticle(currentPublishedAt) {
+  const query = qs.stringify(
+    {
+      filters: {
+        publishedAt: {
+          $lt: currentPublishedAt,
+        },
+      },
+      sort: ['publishedAt:desc'],
+      pagination: {
+        limit: 1,
+      },
+      fields: ['title', 'slug'], // Only title and slug needed
+      populate: {
+        cover: {
+          fields: ['url', 'alternativeText'], // Thumbnail
+        },
+      },
+    },
+    { encodeValuesOnly: true }
+  );
+
+  const apiUrl = `https://funny-virtue-0648592741.strapiapp.com/api/articles?${query}`;
+  const response = await fetch(apiUrl);
+  const data = await response.json();
+  return data.data[0] || null;
+}
+
+// export async function getServerSideProps({ params }) {
+//   const { slug } = params;
+  
+//   const currentArticle = await fetchCurrentArticle(slug);
+  
+//   if (!currentArticle) {
+//     return { notFound: true };
 //   }
+  
+//   const currentPublishedAt = currentArticle.attributes.publishedAt;
+  
+//   // Parallel fetch for prev and next
+//   const [nextArticle, previousArticle] = await Promise.all([
+//     fetchNextArticle(currentPublishedAt),
+//     fetchPreviousArticle(currentPublishedAt),
+//   ]);
+  
+//   return {
+//     props: {
+//       currentArticle,
+//       nextArticle,
+//       previousArticle,
+//     },
+//   };
+// }
+
   
 async function generateMetadata({ params }) {
     const article = await fetchArticle(params.id);
@@ -153,12 +187,23 @@ async function generateMetadata({ params }) {
   }
 
 const SingleBlog = async ({ params }) => {
-    console.log('Slug from params:', params); // Debug: Log the slug
-    const blog = await fetchBlogBySlug(params.id);;
+  const { id: slug } = params
+    // console.log('Slug from params:', params); // Debug: Log the slug
+    const blog = await fetchCurrentArticle(slug);
 
     if (!blog) {
         return <NotFound />;
     }
+
+    // console.log(blog)
+    const currentPublishedAt = blog.publishedAt;
+
+    const [nextArticle, previousArticle] = await Promise.all([
+      fetchNextArticle(currentPublishedAt),
+      fetchPreviousArticle(currentPublishedAt),
+    ]);
+
+    console.log('Next Article:', nextArticle);
 
     return (
         <>
@@ -166,7 +211,7 @@ const SingleBlog = async ({ params }) => {
                 page={blog.title || 'Blog Details'}
                 description="Get an instant, accurate estimate for your bathroom or kitchen renovation in Sydney using our free online cost calculator."
             />
-            <BlogDetailsContent blogInfo={blog} />
+            <BlogDetailsContent lsContent blogInfo={blog} nextArticle={nextArticle} previousArticle={previousArticle}/>
             <FooterV1 />
         </>
     );
